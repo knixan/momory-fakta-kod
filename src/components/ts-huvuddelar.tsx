@@ -131,7 +131,10 @@ export default function HuvuddelarGame() {
   }, []);
 
   const initializeGame = () => {
-    const duplicatedCards = [...cardData, ...cardData.map(card => ({ ...card, id: card.id + 10 }))];
+    const duplicatedCards = [
+      ...cardData,
+      ...cardData.map((card) => ({ ...card, id: card.id + 10 })),
+    ];
     const initializedCards = duplicatedCards.map((card) => ({
       ...card,
       isFlipped: true, // Visa alla kort hela tiden
@@ -289,9 +292,7 @@ export default function HuvuddelarGame() {
               >
                 {card.content}
               </div>
-              <div className="text-xs opacity-75 mt-1 text-white">
-                �
-              </div>
+              <div className="text-xs opacity-75 mt-1 text-white">�</div>
             </div>
           </div>
         ))}
@@ -309,7 +310,8 @@ export default function HuvuddelarGame() {
             </p>
             <div className="bg-purple-100 p-4 rounded-lg mb-6">
               <p className="text-sm text-gray-700">
-                <strong>Huvuddelar i TypeScript:</strong> Att förstå dessa delar är nyckeln till att skriva effektiv och säker TypeScript-kod.
+                <strong>Huvuddelar i TypeScript:</strong> Att förstå dessa delar
+                är nyckeln till att skriva effektiv och säker TypeScript-kod.
               </p>
             </div>
             <button
@@ -335,9 +337,7 @@ export default function HuvuddelarGame() {
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧠</span>
-              <span className="font-semibold text-yellow-300">
-                Syntax
-              </span>
+              <span className="font-semibold text-yellow-300">Syntax</span>
             </div>
             <p>Hur koden skrivs</p>
           </div>
@@ -361,9 +361,7 @@ export default function HuvuddelarGame() {
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧮</span>
-              <span className="font-semibold text-red-300">
-                Variabler
-              </span>
+              <span className="font-semibold text-red-300">Variabler</span>
             </div>
             <p>Lagra data</p>
           </div>
@@ -423,7 +421,9 @@ export default function HuvuddelarGame() {
             <span className="font-semibold text-yellow-300">Reflektion:</span>
           </div>
           <p className="text-sm italic">
-            &ldquo;Huvuddelarna i TypeScript är som byggstenarna i ett hus - varje del har sin plats och funktion för att skapa stabil kod.&rdquo;
+            &ldquo;Huvuddelarna i TypeScript är som byggstenarna i ett hus -
+            varje del har sin plats och funktion för att skapa stabil
+            kod.&rdquo;
           </p>
         </div>
       </div>
@@ -446,18 +446,33 @@ export default function HuvuddelarGame() {
                 1. Syntax och struktur
               </h3>
             </div>
-            <p className="text-sm mb-3">
-              Hur koden skrivs och organiseras.
-            </p>
+            <p className="text-sm mb-3">Hur koden skrivs och organiseras.</p>
             <div className="space-y-2 text-sm">
-              <p>• <strong className="text-yellow-300">Variabler:</strong> let, const</p>
-              <p>• <strong className="text-yellow-300">Satser:</strong> if, for, while</p>
-              <p>• <strong className="text-yellow-300">Funktioner:</strong> function keyword</p>
-              <p>• <strong className="text-yellow-300">Block:</strong> {"{ ... }"}</p>
-              <p>• <strong className="text-yellow-300">Kommentarer:</strong> {"//"}, /* */</p>
+              <p>
+                • <strong className="text-yellow-300">Variabler:</strong> let,
+                const
+              </p>
+              <p>
+                • <strong className="text-yellow-300">Satser:</strong> if, for,
+                while
+              </p>
+              <p>
+                • <strong className="text-yellow-300">Funktioner:</strong>{" "}
+                function keyword
+              </p>
+              <p>
+                • <strong className="text-yellow-300">Block:</strong>{" "}
+                {"{ ... }"}
+              </p>
+              <p>
+                • <strong className="text-yellow-300">Kommentarer:</strong>{" "}
+                {"//"}, /* */
+              </p>
             </div>
             <div className="mt-3 p-2 bg-blue-900 bg-opacity-30 rounded text-xs">
-              <p className="text-blue-200">➡️ Syfte: definiera programflöde och logik.</p>
+              <p className="text-blue-200">
+                ➡️ Syfte: definiera programflöde och logik.
+              </p>
             </div>
           </div>
 
@@ -465,9 +480,7 @@ export default function HuvuddelarGame() {
           <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧩</span>
-              <h3 className="text-lg font-bold text-green-400">
-                2. Datatyper
-              </h3>
+              <h3 className="text-lg font-bold text-green-400">2. Datatyper</h3>
             </div>
             <p className="text-sm mb-3">
               Vilken sorts information som lagras eller hanteras.
@@ -478,7 +491,9 @@ export default function HuvuddelarGame() {
                 <p>string, number, boolean, null, undefined</p>
               </div>
               <div>
-                <p className="font-semibold text-yellow-300">Samlings- och specialtyper:</p>
+                <p className="font-semibold text-yellow-300">
+                  Samlings- och specialtyper:
+                </p>
                 <p>array, tuple, object, any, unknown</p>
               </div>
               <div className="sm:col-span-2">
@@ -487,7 +502,9 @@ export default function HuvuddelarGame() {
               </div>
             </div>
             <div className="mt-3 p-2 bg-green-900 bg-opacity-30 rounded text-xs">
-              <p className="text-green-200">➡️ Syfte: skapa struktur, minska fel och ge tydlighet.</p>
+              <p className="text-green-200">
+                ➡️ Syfte: skapa struktur, minska fel och ge tydlighet.
+              </p>
             </div>
           </div>
 
@@ -520,12 +537,16 @@ export default function HuvuddelarGame() {
                 <p>:, |, &amp;, as, typeof</p>
               </div>
               <div className="sm:col-span-2">
-                <p className="font-semibold text-yellow-300">Ternära och spread:</p>
+                <p className="font-semibold text-yellow-300">
+                  Ternära och spread:
+                </p>
                 <p>? :, ...</p>
               </div>
             </div>
             <div className="mt-3 p-2 bg-red-900 bg-opacity-30 rounded text-xs">
-              <p className="text-red-200">➡️ Syfte: utföra operationer och styra logik.</p>
+              <p className="text-red-200">
+                ➡️ Syfte: utföra operationer och styra logik.
+              </p>
             </div>
           </div>
 
@@ -537,16 +558,25 @@ export default function HuvuddelarGame() {
                 4. Variabler och konstanter
               </h3>
             </div>
-            <p className="text-sm mb-3">
-              Hur man lagrar värden.
-            </p>
+            <p className="text-sm mb-3">Hur man lagrar värden.</p>
             <div className="space-y-2 text-sm">
-              <p>• <strong className="text-blue-300">let</strong> → ändringsbar variabel</p>
-              <p>• <strong className="text-green-300">const</strong> → konstant värde</p>
-              <p>• <strong className="text-red-300">var</strong> → äldre variant (undviks oftast i TS)</p>
+              <p>
+                • <strong className="text-blue-300">let</strong> → ändringsbar
+                variabel
+              </p>
+              <p>
+                • <strong className="text-green-300">const</strong> → konstant
+                värde
+              </p>
+              <p>
+                • <strong className="text-red-300">var</strong> → äldre variant
+                (undviks oftast i TS)
+              </p>
             </div>
             <div className="mt-3 p-2 bg-yellow-900 bg-opacity-30 rounded text-xs">
-              <p className="text-yellow-200">➡️ Syfte: hålla data i minnet för senare användning.</p>
+              <p className="text-yellow-200">
+                ➡️ Syfte: hålla data i minnet för senare användning.
+              </p>
             </div>
           </div>
 
@@ -567,7 +597,9 @@ export default function HuvuddelarGame() {
 }`}</pre>
             </div>
             <div className="mt-3 p-2 bg-purple-900 bg-opacity-30 rounded text-xs">
-              <p className="text-purple-200">➡️ Syfte: återanvänd logik, dela upp programmet i mindre delar.</p>
+              <p className="text-purple-200">
+                ➡️ Syfte: återanvänd logik, dela upp programmet i mindre delar.
+              </p>
             </div>
           </div>
 
@@ -584,13 +616,17 @@ export default function HuvuddelarGame() {
             </p>
             <div className="space-y-3 text-sm">
               <div>
-                <p className="font-semibold text-yellow-300">Objekt: strukturerad data</p>
+                <p className="font-semibold text-yellow-300">
+                  Objekt: strukturerad data
+                </p>
                 <div className="bg-gray-800 p-2 rounded text-xs font-mono text-blue-300 mt-1">
-                  const user = {"{ name: \"Anna\", age: 25 }"};
+                  const user = {'{ name: "Anna", age: 25 }'};
                 </div>
               </div>
               <div>
-                <p className="font-semibold text-yellow-300">Klasser: mallar för att skapa objekt</p>
+                <p className="font-semibold text-yellow-300">
+                  Klasser: mallar för att skapa objekt
+                </p>
                 <div className="bg-gray-800 p-2 rounded text-xs font-mono text-green-300 mt-1">
                   <pre>{`class Person {
   constructor(public name: string) {}
@@ -600,7 +636,9 @@ export default function HuvuddelarGame() {
               </div>
             </div>
             <div className="mt-3 p-2 bg-orange-900 bg-opacity-30 rounded text-xs">
-              <p className="text-orange-200">➡️ Syfte: strukturera och modellera verkliga saker.</p>
+              <p className="text-orange-200">
+                ➡️ Syfte: strukturera och modellera verkliga saker.
+              </p>
             </div>
           </div>
 
@@ -622,7 +660,9 @@ export default function HuvuddelarGame() {
 }`}</pre>
             </div>
             <div className="mt-3 p-2 bg-cyan-900 bg-opacity-30 rounded text-xs">
-              <p className="text-cyan-200">➡️ Syfte: skapa tydliga &quot;mallar&quot; för data.</p>
+              <p className="text-cyan-200">
+                ➡️ Syfte: skapa tydliga &quot;mallar&quot; för data.
+              </p>
             </div>
           </div>
 
@@ -630,12 +670,11 @@ export default function HuvuddelarGame() {
           <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧠</span>
-              <h3 className="text-lg font-bold text-pink-400">
-                8. Generics
-              </h3>
+              <h3 className="text-lg font-bold text-pink-400">8. Generics</h3>
             </div>
             <p className="text-sm mb-3">
-              Kod som kan användas med olika datatyper utan att tappa typkontroll.
+              Kod som kan användas med olika datatyper utan att tappa
+              typkontroll.
             </p>
             <div className="bg-gray-800 p-3 rounded text-sm font-mono text-green-300 mb-3">
               <pre>{`function identity<T>(value: T): T {
@@ -643,7 +682,9 @@ export default function HuvuddelarGame() {
 }`}</pre>
             </div>
             <div className="mt-3 p-2 bg-pink-900 bg-opacity-30 rounded text-xs">
-              <p className="text-pink-200">➡️ Syfte: återanvändbar och flexibel kod.</p>
+              <p className="text-pink-200">
+                ➡️ Syfte: återanvändbar och flexibel kod.
+              </p>
             </div>
           </div>
 
@@ -655,9 +696,7 @@ export default function HuvuddelarGame() {
                 9. Moduler och import/export
               </h3>
             </div>
-            <p className="text-sm mb-3">
-              Hur man delar upp kod i flera filer.
-            </p>
+            <p className="text-sm mb-3">Hur man delar upp kod i flera filer.</p>
             <div className="grid sm:grid-cols-2 gap-3 text-sm">
               <div>
                 <p className="font-semibold text-yellow-300">{"// user.ts"}</p>
@@ -673,7 +712,9 @@ export default function HuvuddelarGame() {
               </div>
             </div>
             <div className="mt-3 p-2 bg-indigo-900 bg-opacity-30 rounded text-xs">
-              <p className="text-indigo-200">➡️ Syfte: strukturera större projekt.</p>
+              <p className="text-indigo-200">
+                ➡️ Syfte: strukturera större projekt.
+              </p>
             </div>
           </div>
 
@@ -685,9 +726,7 @@ export default function HuvuddelarGame() {
                 10. Felhantering
               </h3>
             </div>
-            <p className="text-sm mb-3">
-              Hanterar oväntade situationer.
-            </p>
+            <p className="text-sm mb-3">Hanterar oväntade situationer.</p>
             <div className="bg-gray-800 p-3 rounded text-sm font-mono text-red-300 mb-3">
               <pre>{`try {
   throw new Error("Något gick fel");
@@ -696,7 +735,9 @@ export default function HuvuddelarGame() {
 }`}</pre>
             </div>
             <div className="mt-3 p-2 bg-red-900 bg-opacity-30 rounded text-xs">
-              <p className="text-red-200">➡️ Syfte: förhindra att program kraschar vid fel.</p>
+              <p className="text-red-200">
+                ➡️ Syfte: förhindra att program kraschar vid fel.
+              </p>
             </div>
           </div>
 
@@ -708,17 +749,35 @@ export default function HuvuddelarGame() {
                 11. Kontrollstrukturer
               </h3>
             </div>
-            <p className="text-sm mb-3">
-              Styr programflödet.
-            </p>
+            <p className="text-sm mb-3">Styr programflödet.</p>
             <div className="space-y-2 text-sm">
-              <p>• <strong className="text-yellow-300">if / else:</strong> Villkorlig körning</p>
-              <p>• <strong className="text-yellow-300">switch:</strong> Flera alternativ</p>
-              <p>• <strong className="text-yellow-300">for, while, for...of, for...in:</strong> Loopar</p>
-              <p>• <strong className="text-yellow-300">return, break, continue:</strong> Kontrollflöde</p>
+              <p>
+                • <strong className="text-yellow-300">if / else:</strong>{" "}
+                Villkorlig körning
+              </p>
+              <p>
+                • <strong className="text-yellow-300">switch:</strong> Flera
+                alternativ
+              </p>
+              <p>
+                •{" "}
+                <strong className="text-yellow-300">
+                  for, while, for...of, for...in:
+                </strong>{" "}
+                Loopar
+              </p>
+              <p>
+                •{" "}
+                <strong className="text-yellow-300">
+                  return, break, continue:
+                </strong>{" "}
+                Kontrollflöde
+              </p>
             </div>
             <div className="mt-3 p-2 bg-emerald-900 bg-opacity-30 rounded text-xs">
-              <p className="text-emerald-200">➡️ Syfte: styra ordningen som koden körs i.</p>
+              <p className="text-emerald-200">
+                ➡️ Syfte: styra ordningen som koden körs i.
+              </p>
             </div>
           </div>
 
@@ -730,11 +789,14 @@ export default function HuvuddelarGame() {
                 12. Kommentarer och dokumentation
               </h3>
             </div>
-            <p className="text-sm mb-3">
-              Förklarar koden.
-            </p>
+            <p className="text-sm mb-3">Förklarar koden.</p>
             <div className="space-y-2 text-sm">
-              <p>• <strong className="text-green-300">{"// En enkel kommentar"}</strong></p>
+              <p>
+                •{" "}
+                <strong className="text-green-300">
+                  {"// En enkel kommentar"}
+                </strong>
+              </p>
               <div className="bg-gray-800 p-2 rounded text-xs font-mono text-blue-300">
                 <pre>{`/**
  * Dokumentationskommentar för funktioner
@@ -742,7 +804,9 @@ export default function HuvuddelarGame() {
               </div>
             </div>
             <div className="mt-3 p-2 bg-gray-900 bg-opacity-30 rounded text-xs">
-              <p className="text-gray-200">➡️ Syfte: gör koden lättare att förstå och underhålla.</p>
+              <p className="text-gray-200">
+                ➡️ Syfte: gör koden lättare att förstå och underhålla.
+              </p>
             </div>
           </div>
 
@@ -755,13 +819,16 @@ export default function HuvuddelarGame() {
               </h3>
             </div>
             <p className="text-sm mb-3">
-              TypeScript använder ofta typer från externa bibliotek (.d.ts-filer).
+              TypeScript använder ofta typer från externa bibliotek
+              (.d.ts-filer).
             </p>
             <div className="bg-gray-800 p-3 rounded text-sm font-mono text-yellow-300 mb-3">
               <pre>npm install --save-dev @types/express</pre>
             </div>
             <div className="mt-3 p-2 bg-teal-900 bg-opacity-30 rounded text-xs">
-              <p className="text-teal-200">➡️ Syfte: lägga till typstöd för tredjepartspaket.</p>
+              <p className="text-teal-200">
+                ➡️ Syfte: lägga till typstöd för tredjepartspaket.
+              </p>
             </div>
           </div>
 
@@ -787,7 +854,9 @@ export default function HuvuddelarGame() {
 }`}</pre>
             </div>
             <div className="mt-3 p-2 bg-amber-900 bg-opacity-30 rounded text-xs">
-              <p className="text-amber-200">➡️ Syfte: kontrollera hur koden översätts till JavaScript.</p>
+              <p className="text-amber-200">
+                ➡️ Syfte: kontrollera hur koden översätts till JavaScript.
+              </p>
             </div>
           </div>
         </div>
