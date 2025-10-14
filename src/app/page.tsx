@@ -20,7 +20,7 @@ export default function Home() {
           <h2 id="games-heading" className="sr-only">
             Tillgängliga spel
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* TYPESCRIPT - SYNTAX GRUND */}
             <Link
               href="/ts/syntax-grund"
@@ -78,6 +78,27 @@ export default function Home() {
                 Öva vad de olika tecknen betyder i Typescript.
               </p>
               <div className="mt-4 inline-block bg-cyan-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            {/* TYPESCRIPT - HUVUDDELAR */}
+            <Link
+              href="/ts/huvuddelar"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-purple-300 transition-colors focus:outline-none focus:ring-4 focus:ring-purple-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Huvuddelar i TypeScript
+                </h3>
+                <span className="text-purple-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Utforska de viktigaste delarna av TypeScript.
+              </p>
+              <div className="mt-4 inline-block bg-purple-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
                 Spela
               </div>
             </Link>
