@@ -101,11 +101,11 @@ Varje spel består av:
 
 10 matchande par (koncept + förklaring/kodexempel).
 
-Spelaren klickar på två kort för att avslöja dem.
+Spelaren klickar på två kort för att matcha dem.
 
-Om de matchar, stannar de avslöjade och markeras som hittade.
+Om de matchar, vänds de bort.
 
-Om de inte matchar, vänds de tillbaka efter en kort fördröjning.
+Om de inte matchar, får man prova igen.
 
 Spelet är slutfört när alla par har matchats.
 
