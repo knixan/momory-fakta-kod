@@ -6,7 +6,7 @@ import React from "react";
 interface Card {
   id: number;
   content: string;
-  type: "factbox";
+  type: "concept" | "description";
   matchId: number;
   textColor: string;
   isFlipped: boolean;
@@ -36,86 +36,78 @@ const cardColors = [
   "text-slate-300",
   "text-zinc-300",
   "text-gray-300",
-  "text-stone-300",
-  "text-neutral-300",
-  "text-orange-200",
-  "text-yellow-200",
-  "text-green-200",
-  "text-blue-200",
-  "text-purple-200",
-  "text-pink-200",
 ];
 
-const cardData = [
+const cardPairs = [
   {
-    id: 1,
-    content: "Syntax: Hur koden skrivs",
-    type: "factbox" as const,
     matchId: 1,
-    textColor: cardColors[0],
+    concept: "Syntax",
+    description: "Hur koden skrivs\n{ }, ;, if, for",
+    conceptIcon: "🧠",
+    descIcon: "📝",
   },
   {
-    id: 2,
-    content: "Datatyper: Vilka typer av data som finns",
-    type: "factbox" as const,
     matchId: 2,
-    textColor: cardColors[1],
+    concept: "Datatyper",
+    description: "string, number, boolean\narray, object",
+    conceptIcon: "🧩",
+    descIcon: "🔢",
   },
   {
-    id: 3,
-    content: "Tecken / Operatorer: Symboler som styr logik",
-    type: "factbox" as const,
     matchId: 3,
-    textColor: cardColors[2],
+    concept: "Operatorer",
+    description: "+, -, *, /\n&&, ||, ===",
+    conceptIcon: "🔣",
+    descIcon: "⚡",
   },
   {
-    id: 4,
-    content: "Variabler & Konstanter: Lagra data",
-    type: "factbox" as const,
     matchId: 4,
-    textColor: cardColors[3],
+    concept: "Variabler",
+    description: "let name = 'Anna'\nconst age = 25",
+    conceptIcon: "🧮",
+    descIcon: "📦",
   },
   {
-    id: 5,
-    content: "Funktioner: Återanvändbar logik",
-    type: "factbox" as const,
     matchId: 5,
-    textColor: cardColors[4],
+    concept: "Funktioner",
+    description: "function greet()\n=> arrow functions",
+    conceptIcon: "⚙️",
+    descIcon: "🔧",
   },
   {
-    id: 6,
-    content: "Objekt & Klasser: Struktur & OOP",
-    type: "factbox" as const,
     matchId: 6,
-    textColor: cardColors[5],
+    concept: "Objekt & Klasser",
+    description: "class Person {}\n{ name, age }",
+    conceptIcon: "🧱",
+    descIcon: "🏗️",
   },
   {
-    id: 7,
-    content: "Interface / Type: Definiera form på data",
-    type: "factbox" as const,
     matchId: 7,
-    textColor: cardColors[6],
+    concept: "Interface",
+    description: "interface User {}\ntype Shape = ...",
+    conceptIcon: "🧩",
+    descIcon: "📋",
   },
   {
-    id: 8,
-    content: "Generics: Flexibel kod med typer",
-    type: "factbox" as const,
     matchId: 8,
-    textColor: cardColors[7],
+    concept: "Generics",
+    description: "Array<T>\nfunction<T>(value: T)",
+    conceptIcon: "🧠",
+    descIcon: "🔄",
   },
   {
-    id: 9,
-    content: "Moduler: Dela upp projekt",
-    type: "factbox" as const,
     matchId: 9,
-    textColor: cardColors[8],
+    concept: "Moduler",
+    description: "import { ... }\nexport default",
+    conceptIcon: "⚡",
+    descIcon: "📚",
   },
   {
-    id: 10,
-    content: "Kontrollstrukturer: Styra flödet",
-    type: "factbox" as const,
     matchId: 10,
-    textColor: cardColors[9],
+    concept: "Kontrollstrukturer",
+    description: "if/else, switch\nfor, while loops",
+    conceptIcon: "🔄",
+    descIcon: "🎯",
   },
 ];
 
@@ -131,18 +123,35 @@ export default function HuvuddelarGame() {
   }, []);
 
   const initializeGame = () => {
-    const duplicatedCards = [
-      ...cardData,
-      ...cardData.map((card) => ({ ...card, id: card.id + 10 })),
-    ];
-    const initializedCards = duplicatedCards.map((card) => ({
-      ...card,
-      isFlipped: true, // Visa alla kort hela tiden
-      isMatched: false,
-    }));
+    const allCards: Card[] = [];
+
+    // Skapa kort för begrepp och beskrivningar
+    cardPairs.forEach((pair, index) => {
+      // Begreppskort
+      allCards.push({
+        id: pair.matchId,
+        content: pair.concept,
+        type: "concept",
+        matchId: pair.matchId,
+        textColor: cardColors[index * 2],
+        isFlipped: true,
+        isMatched: false,
+      });
+
+      // Beskrivningskort
+      allCards.push({
+        id: pair.matchId + 100, // Offset för att undvika ID-konflikter
+        content: pair.description,
+        type: "description",
+        matchId: pair.matchId,
+        textColor: cardColors[index * 2 + 1],
+        isFlipped: true,
+        isMatched: false,
+      });
+    });
 
     // Blanda korten
-    const shuffledCards = [...initializedCards].sort(() => Math.random() - 0.5);
+    const shuffledCards = [...allCards].sort(() => Math.random() - 0.5);
     setCards(shuffledCards);
     setFlippedCards([]);
     setMatches(0);
@@ -176,7 +185,12 @@ export default function HuvuddelarGame() {
     const firstCard = cards.find((card) => card.id === firstId);
     const secondCard = cards.find((card) => card.id === secondId);
 
-    if (firstCard && secondCard && firstCard.matchId === secondCard.matchId) {
+    if (
+      firstCard &&
+      secondCard &&
+      firstCard.matchId === secondCard.matchId &&
+      firstCard.type !== secondCard.type // Måste vara olika typer (concept + description)
+    ) {
       // Match! Låt korten försvinna efter en kort stund
       setTimeout(() => {
         setCards((prevCards) =>
@@ -213,17 +227,23 @@ export default function HuvuddelarGame() {
     initializeGame();
   };
 
+  const getCardIcon = (card: Card) => {
+    const pair = cardPairs.find((p) => p.matchId === card.matchId);
+    if (!pair) return "📝";
+    return card.type === "concept" ? pair.conceptIcon : pair.descIcon;
+  };
+
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik och instruktioner */}
       <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-purple-400 mb-2">
-            🧠 Matcha Huvuddelar i TypeScript!
+            🧠 Matcha TypeScript-begrepp med beskrivningar!
           </div>
           <div className="text-sm text-gray-300">
-            Klicka på två identiska faktarutor för att hitta matchande par.
-            Matchade par försvinner från spelbrädet.
+            Klicka på ett begrepp och matcha det med rätt beskrivning eller
+            exempel. Matchade par försvinner från spelbrädet.
           </div>
         </div>
         <div className="flex justify-between items-center flex-wrap gap-4">
@@ -284,15 +304,30 @@ export default function HuvuddelarGame() {
                   : "border-gray-300"
               }
               ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
+              ${
+                card.type === "concept"
+                  ? "bg-gradient-to-br from-blue-900 to-purple-900"
+                  : "bg-gradient-to-br from-green-900 to-teal-900"
+              }
               transition-all duration-300
             `}
             >
+              <div className="text-lg mb-1">{getCardIcon(card)}</div>
               <div
-                className={`text-xs sm:text-sm font-semibold text-center leading-tight ${card.textColor}`}
+                className={`text-xs sm:text-sm font-semibold text-center leading-tight ${card.textColor} whitespace-pre-line`}
               >
                 {card.content}
               </div>
-              <div className="text-xs opacity-75 mt-1 text-white">�</div>
+              {card.type === "concept" && (
+                <div className="text-xs opacity-75 mt-1 text-white">
+                  Begrepp
+                </div>
+              )}
+              {card.type === "description" && (
+                <div className="text-xs opacity-75 mt-1 text-white">
+                  Exempel
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -310,8 +345,8 @@ export default function HuvuddelarGame() {
             </p>
             <div className="bg-purple-100 p-4 rounded-lg mb-6">
               <p className="text-sm text-gray-700">
-                <strong>Huvuddelar i TypeScript:</strong> Att förstå dessa delar
-                är nyckeln till att skriva effektiv och säker TypeScript-kod.
+                <strong>Bra jobbat!</strong> Nu känner du till huvuddelarna i
+                TypeScript och hur de används i praktiken.
               </p>
             </div>
             <button
@@ -328,102 +363,37 @@ export default function HuvuddelarGame() {
       <div className="mt-6 bg-gradient-to-r from-purple-900 to-indigo-900 rounded-lg p-6 text-white border-2 border-purple-500">
         <div className="flex items-center gap-2 mb-4">
           <div className="text-2xl">📖</div>
-          <h3 className="text-xl font-bold">
-            Snabbfakta om TypeScript-huvuddelar
-          </h3>
+          <h3 className="text-xl font-bold">Så fungerar matchningen</h3>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-sm">
+        <div className="grid sm:grid-cols-2 gap-4 text-sm">
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧠</span>
-              <span className="font-semibold text-yellow-300">Syntax</span>
+              <span className="font-semibold text-blue-300">Begreppskort</span>
             </div>
-            <p>Hur koden skrivs</p>
+            <p>Blå bakgrund - visar namnet på TypeScript-konceptet</p>
           </div>
 
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🧩</span>
-              <span className="font-semibold text-blue-300">Datatyper</span>
+              <span className="text-lg">📝</span>
+              <span className="font-semibold text-green-300">
+                Beskrivningskort
+              </span>
             </div>
-            <p>Vilka typer av data som finns</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🔣</span>
-              <span className="font-semibold text-green-300">Operatorer</span>
-            </div>
-            <p>Symboler som styr logik</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🧮</span>
-              <span className="font-semibold text-red-300">Variabler</span>
-            </div>
-            <p>Lagra data</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">⚙️</span>
-              <span className="font-semibold text-purple-300">Funktioner</span>
-            </div>
-            <p>Återanvändbar logik</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🧱</span>
-              <span className="font-semibold text-orange-300">Objekt</span>
-            </div>
-            <p>Struktur & OOP</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🧩</span>
-              <span className="font-semibold text-cyan-300">Interface</span>
-            </div>
-            <p>Definiera form på data</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🧠</span>
-              <span className="font-semibold text-pink-300">Generics</span>
-            </div>
-            <p>Flexibel kod med typer</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">⚡</span>
-              <span className="font-semibold text-indigo-300">Moduler</span>
-            </div>
-            <p>Dela upp projekt</p>
-          </div>
-
-          <div className="bg-black bg-opacity-30 rounded p-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🔄</span>
-              <span className="font-semibold text-emerald-300">Kontroll</span>
-            </div>
-            <p>Styra flödet</p>
+            <p>Grön bakgrund - visar exempel eller förklaring</p>
           </div>
         </div>
 
         <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-yellow-400">
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-lg">💭</span>
-            <span className="font-semibold text-yellow-300">Reflektion:</span>
+            <span className="text-lg">💡</span>
+            <span className="font-semibold text-yellow-300">Tips:</span>
           </div>
           <p className="text-sm italic">
-            &ldquo;Huvuddelarna i TypeScript är som byggstenarna i ett hus -
-            varje del har sin plats och funktion för att skapa stabil
-            kod.&rdquo;
+            &ldquo;Varje begrepp har sitt eget exempel. Försök koppla samman vad
+            du vet om TypeScript för att hitta rätt matchningar!&rdquo;
           </p>
         </div>
       </div>
