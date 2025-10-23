@@ -17,7 +17,10 @@ export default function Home() {
 
         {/* TypeScript Spel */}
         <section aria-labelledby="ts-heading" className="mb-8">
-          <h2 id="ts-heading" className="text-2xl font-bold text-yellow-300 mb-4 text-center">
+          <h2
+            id="ts-heading"
+            className="text-2xl font-bold text-yellow-300 mb-4 text-center"
+          >
             📘 TypeScript Spel
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -107,7 +110,10 @@ export default function Home() {
 
         {/* Prisma Spel */}
         <section aria-labelledby="prisma-heading">
-          <h2 id="prisma-heading" className="text-2xl font-bold text-cyan-300 mb-4 text-center">
+          <h2
+            id="prisma-heading"
+            className="text-2xl font-bold text-cyan-300 mb-4 text-center"
+          >
             🗄️ Prisma Spel
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -170,6 +176,164 @@ export default function Home() {
                 Öva på CRUD-operationer med Prisma Client.
               </p>
               <div className="mt-4 inline-block bg-emerald-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        {/* Next.js Spel */}
+        <section aria-labelledby="nextjs-heading" className="mt-8">
+          <h2
+            id="nextjs-heading"
+            className="text-2xl font-bold text-sky-300 mb-4 text-center"
+          >
+            ⚛️ Next.js Spel
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link
+              href="/nextjs/routing"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-blue-300 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Next.js - Routing
+                </h3>
+                <span className="text-blue-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Filsystem, layouts och dynamiska segment.
+              </p>
+              <div className="mt-4 inline-block bg-blue-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/nextjs/datafetch"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-emerald-300 transition-colors focus:outline-none focus:ring-4 focus:ring-emerald-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Next.js - Data Fetching
+                </h3>
+                <span className="text-emerald-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Hämta data med rätt strategi (SSR/SSG/Client).
+              </p>
+              <div className="mt-4 inline-block bg-emerald-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/nextjs/lifecycle"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-yellow-300 transition-colors focus:outline-none focus:ring-4 focus:ring-yellow-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Next.js - Lifecycle
+                </h3>
+                <span className="text-yellow-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Server vs Client components och hooks.
+              </p>
+              <div className="mt-4 inline-block bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        {/* React Spel */}
+        <section aria-labelledby="react-heading" className="mt-8">
+          <h2
+            id="react-heading"
+            className="text-2xl font-bold text-cyan-300 mb-4 text-center"
+          >
+            ⚛️ React Spel
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link
+              href="/react/hooks"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-blue-300 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">React - Hooks</h3>
+                <span className="text-blue-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                useState, useEffect, useContext och mer.
+              </p>
+              <div className="mt-4 inline-block bg-blue-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/react/components"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-cyan-300 transition-colors focus:outline-none focus:ring-4 focus:ring-cyan-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  React - Components
+                </h3>
+                <span className="text-cyan-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Komponenter, Props och Children.
+              </p>
+              <div className="mt-4 inline-block bg-cyan-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/react/jsx"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-green-300 transition-colors focus:outline-none focus:ring-4 focus:ring-green-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">React - JSX</h3>
+                <span className="text-green-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                JSX syntax och specialtecken.
+              </p>
+              <div className="mt-4 inline-block bg-green-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/react/state"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-purple-300 transition-colors focus:outline-none focus:ring-4 focus:ring-purple-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  React - State Management
+                </h3>
+                <span className="text-purple-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Lokal, lyftad och global state.
+              </p>
+              <div className="mt-4 inline-block bg-purple-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
                 Spela
               </div>
             </Link>
