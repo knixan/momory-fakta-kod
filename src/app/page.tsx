@@ -15,10 +15,10 @@ export default function Home() {
           </p>
         </header>
 
-        {/* Spel-lista */}
-        <section aria-labelledby="games-heading">
-          <h2 id="games-heading" className="sr-only">
-            Tillgängliga spel
+        {/* TypeScript Spel */}
+        <section aria-labelledby="ts-heading" className="mb-8">
+          <h2 id="ts-heading" className="text-2xl font-bold text-yellow-300 mb-4 text-center">
+            📘 TypeScript Spel
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* TYPESCRIPT - SYNTAX GRUND */}
@@ -99,6 +99,77 @@ export default function Home() {
                 Utforska de viktigaste delarna av TypeScript.
               </p>
               <div className="mt-4 inline-block bg-purple-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        {/* Prisma Spel */}
+        <section aria-labelledby="prisma-heading">
+          <h2 id="prisma-heading" className="text-2xl font-bold text-cyan-300 mb-4 text-center">
+            🗄️ Prisma Spel
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* PRISMA - SCHEMA */}
+            <Link
+              href="/Prisma/schema"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-cyan-300 transition-colors focus:outline-none focus:ring-4 focus:ring-cyan-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Prisma - Schema
+                </h3>
+                <span className="text-cyan-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Lär dig grunderna i Prisma schema-syntax.
+              </p>
+              <div className="mt-4 inline-block bg-cyan-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            {/* PRISMA - RELATIONER */}
+            <Link
+              href="/Prisma/relationer"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-pink-300 transition-colors focus:outline-none focus:ring-4 focus:ring-pink-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Prisma - Relationer
+                </h3>
+                <span className="text-pink-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Förstå olika typer av relationer i Prisma.
+              </p>
+              <div className="mt-4 inline-block bg-pink-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            {/* PRISMA - QUERIES */}
+            <Link
+              href="/Prisma/queries"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-emerald-300 transition-colors focus:outline-none focus:ring-4 focus:ring-emerald-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Prisma - Queries
+                </h3>
+                <span className="text-emerald-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Öva på CRUD-operationer med Prisma Client.
+              </p>
+              <div className="mt-4 inline-block bg-emerald-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
                 Spela
               </div>
             </Link>
