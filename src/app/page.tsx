@@ -340,6 +340,97 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Better Auth Spel */}
+        <section aria-labelledby="better-auth-heading" className="mt-8">
+          <h2
+            id="better-auth-heading"
+            className="text-2xl font-bold text-indigo-300 mb-4 text-center"
+          >
+            🔐 Better Auth Spel
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link
+              href="/better-auth/grundkoncept"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-indigo-300 transition-colors focus:outline-none focus:ring-4 focus:ring-indigo-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Better Auth - Grundkoncept
+                </h3>
+                <span className="text-indigo-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Lär dig grundläggande koncept i Better Auth.
+              </p>
+              <div className="mt-4 inline-block bg-indigo-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/better-auth/autentisering"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-blue-300 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Better Auth - Autentisering
+                </h3>
+                <span className="text-blue-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Olika autentiseringsmetoder och funktioner.
+              </p>
+              <div className="mt-4 inline-block bg-blue-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/better-auth/sessions"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-green-300 transition-colors focus:outline-none focus:ring-4 focus:ring-green-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Better Auth - Sessions
+                </h3>
+                <span className="text-green-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Sessionshantering och säkerhetsfunktioner.
+              </p>
+              <div className="mt-4 inline-block bg-green-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/better-auth/plugins"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-purple-300 transition-colors focus:outline-none focus:ring-4 focus:ring-purple-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  Better Auth - Plugins
+                </h3>
+                <span className="text-purple-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Utöka med plugins: 2FA, passkey, magic link m.m.
+              </p>
+              <div className="mt-4 inline-block bg-purple-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+          </div>
+        </section>
+
         {/* Information */}
         <div
           id="info"
