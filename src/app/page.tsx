@@ -114,7 +114,7 @@ export default function Home() {
             id="prisma-heading"
             className="text-2xl font-bold text-cyan-300 mb-4 text-center"
           >
-            🗄️ Prisma Spel
+            🗄️ Prisma 7 Spel
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* PRISMA - SCHEMA */}
@@ -124,14 +124,14 @@ export default function Home() {
             >
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold text-white">
-                  Prisma - Schema
+                  Prisma 7 - Schema
                 </h3>
                 <span className="text-cyan-300 text-2xl transition-transform group-hover:translate-x-1">
                   →
                 </span>
               </div>
               <p className="mt-2 text-gray-300 text-sm">
-                Lär dig grunderna i Prisma schema-syntax.
+                Lär dig Prisma 7 schema: ny generator, driver adapters och prisma.config.ts.
               </p>
               <div className="mt-4 inline-block bg-cyan-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
                 Spela
@@ -145,14 +145,14 @@ export default function Home() {
             >
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold text-white">
-                  Prisma - Relationer
+                  Prisma 7 - Relationer
                 </h3>
                 <span className="text-pink-300 text-2xl transition-transform group-hover:translate-x-1">
                   →
                 </span>
               </div>
               <p className="mt-2 text-gray-300 text-sm">
-                Förstå olika typer av relationer i Prisma.
+                Förstå olika typer av relationer i Prisma 7.
               </p>
               <div className="mt-4 inline-block bg-pink-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
                 Spela
@@ -166,14 +166,14 @@ export default function Home() {
             >
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold text-white">
-                  Prisma - Queries
+                  Prisma 7 - Queries
                 </h3>
                 <span className="text-emerald-300 text-2xl transition-transform group-hover:translate-x-1">
                   →
                 </span>
               </div>
               <p className="mt-2 text-gray-300 text-sm">
-                Öva på CRUD-operationer med Prisma Client.
+                Öva på CRUD-operationer med Prisma 7 Client.
               </p>
               <div className="mt-4 inline-block bg-emerald-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
                 Spela

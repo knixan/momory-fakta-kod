@@ -46,49 +46,49 @@ const cardData = [
     textColor: cardColors[6],
   },
 
-  // @id
+  // prisma-client generator (Prisma 7)
   {
     id: 3,
-    content: "@id",
+    content: "prisma-client",
     type: "concept" as const,
     matchId: 2,
     textColor: cardColors[1],
   },
   {
     id: 4,
-    content: "Markerar fältet som primärnyckel",
+    content: "Ny generator i Prisma 7 (ersätter prisma-client-js)",
     type: "description" as const,
     matchId: 2,
     textColor: cardColors[7],
   },
 
-  // @default()
+  // prisma.config.ts (Prisma 7)
   {
     id: 5,
-    content: "@default()",
+    content: "prisma.config.ts",
     type: "concept" as const,
     matchId: 3,
     textColor: cardColors[2],
   },
   {
     id: 6,
-    content: "Sätter ett standardvärde för fältet",
+    content: "Ny konfigurationsfil för CLI och databas-URL i Prisma 7",
     type: "description" as const,
     matchId: 3,
     textColor: cardColors[8],
   },
 
-  // @unique
+  // Driver Adapter (Prisma 7)
   {
     id: 7,
-    content: "@unique",
+    content: "Driver Adapter",
     type: "concept" as const,
     matchId: 4,
     textColor: cardColors[3],
   },
   {
     id: 8,
-    content: "Säkerställer att värdet är unikt i tabellen",
+    content: "Krävs i Prisma 7 för att koppla till databasen (ersätter Rust-engine)",
     type: "description" as const,
     matchId: 4,
     textColor: cardColors[9],
@@ -110,17 +110,17 @@ const cardData = [
     textColor: cardColors[10],
   },
 
-  // String
+  // output (Prisma 7)
   {
     id: 11,
-    content: "String",
+    content: "output (i generator)",
     type: "concept" as const,
     matchId: 6,
     textColor: cardColors[5],
   },
   {
     id: 12,
-    content: "Datatyp för text i Prisma schema",
+    content: "Obligatoriskt i Prisma 7 — anger var klienten genereras",
     type: "description" as const,
     matchId: 6,
     textColor: cardColors[11],
@@ -218,7 +218,7 @@ export default function PrismaSchemaGame() {
       <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-cyan-400 mb-2">
-            🗄️ Matcha Prisma Schema-koncept!
+            🗄️ Matcha Prisma 7 Schema-koncept!
           </div>
           <div className="text-sm text-gray-300">
             Klicka på två kort som hör ihop: koncept och dess förklaring.
@@ -309,8 +309,9 @@ export default function PrismaSchemaGame() {
             </p>
             <div className="bg-cyan-100 p-4 rounded-lg mb-6">
               <p className="text-sm text-gray-700">
-                <strong>Prisma Schema:</strong> Att förstå schema-syntaxen är
-                grunden för att kunna designa databasmodeller i Prisma.
+                <strong>Prisma 7 Schema:</strong> Att förstå schema-syntaxen och
+                de nya Prisma 7-koncepten som driver adapters och prisma.config.ts
+                är grunden för modern Prisma-utveckling.
               </p>
             </div>
             <button
@@ -327,7 +328,7 @@ export default function PrismaSchemaGame() {
       <div className="mt-6 bg-gradient-to-r from-cyan-900 to-blue-900 rounded-lg p-6 text-white border-2 border-cyan-500">
         <div className="flex items-center gap-2 mb-4">
           <div className="text-2xl">📖</div>
-          <h3 className="text-xl font-bold">Snabbfakta om Prisma Schema</h3>
+          <h3 className="text-xl font-bold">Snabbfakta om Prisma 7 Schema</h3>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
@@ -341,26 +342,26 @@ export default function PrismaSchemaGame() {
 
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">🔑</span>
-              <span className="font-semibold text-yellow-300">@id</span>
+              <span className="text-lg">⚡</span>
+              <span className="font-semibold text-yellow-300">prisma-client</span>
             </div>
-            <p>Primärnyckel för tabellen</p>
+            <p>Ny Rust-fri generator i v7</p>
           </div>
 
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">⚙️</span>
-              <span className="font-semibold text-green-300">@default()</span>
+              <span className="text-lg">📋</span>
+              <span className="font-semibold text-green-300">prisma.config.ts</span>
             </div>
-            <p>Standardvärde för fält</p>
+            <p>Ny konfigurationsfil för CLI</p>
           </div>
 
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">✨</span>
-              <span className="font-semibold text-purple-300">@unique</span>
+              <span className="text-lg">🔌</span>
+              <span className="font-semibold text-purple-300">Driver Adapter</span>
             </div>
-            <p>Garanterar unika värden</p>
+            <p>Ersätter Rust-engine i v7</p>
           </div>
 
           <div className="bg-black bg-opacity-30 rounded p-3">
@@ -373,10 +374,10 @@ export default function PrismaSchemaGame() {
 
           <div className="bg-black bg-opacity-30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-lg">📝</span>
-              <span className="font-semibold text-orange-300">Datatyper</span>
+              <span className="text-lg">📂</span>
+              <span className="font-semibold text-orange-300">output</span>
             </div>
-            <p>String, Int, Boolean, DateTime</p>
+            <p>Obligatoriskt i generator (v7)</p>
           </div>
         </div>
 
@@ -386,8 +387,8 @@ export default function PrismaSchemaGame() {
             <span className="font-semibold text-cyan-300">Tips:</span>
           </div>
           <p className="text-sm">
-            Prisma Schema är hjärtat i din applikation - en väldefinierad schema
-            ger automatisk typning och förhindrar databasfel!
+            Prisma 7 kräver driver adapters och ES-moduler — ingen Rust-engine
+            längre! Konfigurationen flyttar till prisma.config.ts.
           </p>
         </div>
       </div>
@@ -397,7 +398,7 @@ export default function PrismaSchemaGame() {
         <div className="flex items-center gap-3 mb-6">
           <div className="text-3xl">📚</div>
           <h2 className="text-2xl font-bold text-cyan-400">
-            Prisma Schema i djupet
+            Prisma 7 Schema i djupet
           </h2>
         </div>
 
@@ -405,48 +406,44 @@ export default function PrismaSchemaGame() {
           <div className="space-y-4">
             <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
-                🏗️ Grundläggande struktur
+                ⚡ Ny generator i Prisma 7
               </h3>
               <div className="space-y-2 text-sm">
-                <p>
-                  • <strong className="text-yellow-300">model:</strong>{" "}
-                  Definierar en tabell/entitet
+                <p className="text-gray-300">
+                  prisma-client-js ersätts av prisma-client (Rust-fri).
                 </p>
-                <p>
-                  • <strong className="text-yellow-300">Fältnamn:</strong> Namn
-                  på kolumner
-                </p>
-                <p>
-                  • <strong className="text-yellow-300">Datatyp:</strong>{" "}
-                  String, Int, Boolean, DateTime
-                </p>
-                <p>
-                  • <strong className="text-yellow-300">Modifiers:</strong> ?
-                  (optional), [] (array)
-                </p>
+                <div className="bg-gray-900 p-2 rounded text-xs font-mono">
+                  <pre>
+                    {`generator client {
+  provider = "prisma-client"
+  output   = "./generated/prisma"
+}
+
+// output är nu obligatoriskt!
+// Genereras INTE längre i node_modules`}
+                  </pre>
+                </div>
               </div>
             </div>
 
             <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
-                🔧 Vanliga attribut
+                📋 prisma.config.ts
               </h3>
               <div className="space-y-2 text-sm">
-                <p>
-                  • <strong className="text-cyan-300">@id:</strong> Primärnyckel
+                <p className="text-gray-300">
+                  Ny konfigurationsfil ersätter URL i schema.
                 </p>
-                <p>
-                  • <strong className="text-cyan-300">@default():</strong>{" "}
-                  Standardvärde
-                </p>
-                <p>
-                  • <strong className="text-cyan-300">@unique:</strong> Unikt
-                  värde
-                </p>
-                <p>
-                  • <strong className="text-cyan-300">@updatedAt:</strong>{" "}
-                  Auto-uppdateras
-                </p>
+                <div className="bg-gray-900 p-2 rounded text-xs font-mono">
+                  <pre>
+                    {`import { defineConfig } from "prisma/config"
+
+export default defineConfig({
+  earlyAccess: true,
+  schema: "./prisma/schema.prisma",
+})`}
+                  </pre>
+                </div>
               </div>
             </div>
           </div>
@@ -454,39 +451,39 @@ export default function PrismaSchemaGame() {
           <div className="space-y-4">
             <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
-                📝 Exempel på model
+                🔌 Driver Adapter-setup
               </h3>
               <div className="bg-gray-900 p-3 rounded text-xs font-mono">
                 <pre>
-                  {`model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  name      String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  posts     Post[]
-}`}
+                  {`import { PrismaClient } from "./generated/prisma"
+import { PrismaPg } from "@prisma/adapter-pg"
+
+const adapter = new PrismaPg({ connectionString: url })
+const prisma = new PrismaClient({ adapter })`}
                 </pre>
               </div>
             </div>
 
             <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
-                💡 Viktigt att veta
+                💡 Viktigt i Prisma 7
               </h3>
               <div className="space-y-2 text-sm">
                 <p>
-                  • Schema definierar databas<strong>struktur</strong>
+                  • <strong className="text-cyan-300">ES-moduler:</strong>{" "}
+                  Kräver {`"type": "module"`} i package.json
                 </p>
                 <p>
-                  • Typning genereras <strong>automatiskt</strong>
+                  • <strong className="text-cyan-300">Node.js 20.19+:</strong>{" "}
+                  Minsta version som stöds
                 </p>
                 <p>
-                  • Migrationer skapar/uppdaterar <strong>databas</strong>
+                  • <strong className="text-cyan-300">TypeScript 5.4+:</strong>{" "}
+                  Med moduleResolution: bundler
                 </p>
                 <p>
-                  • Relations hanteras via{" "}
-                  <strong className="text-pink-300">@relation</strong>
+                  • <strong className="text-cyan-300">Ingen MongoDB:</strong>{" "}
+                  Stöds inte ännu i v7
                 </p>
               </div>
             </div>

@@ -218,7 +218,7 @@ export default function PrismaQueriesGame() {
       <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-emerald-400 mb-2">
-            ⚡ Matcha Prisma Queries!
+            ⚡ Matcha Prisma 7 Queries!
           </div>
           <div className="text-sm text-gray-300">
             Klicka på två kort som hör ihop: query och dess funktion. Matchade
@@ -311,8 +311,9 @@ export default function PrismaQueriesGame() {
             </p>
             <div className="bg-emerald-100 p-4 rounded-lg mb-6">
               <p className="text-sm text-gray-700">
-                <strong>Prisma Queries:</strong> Att behärska CRUD-operationer
-                är fundamentalt för att arbeta med data i Prisma.
+                <strong>Prisma 7 Queries:</strong> CRUD-operationerna fungerar
+                likadant i Prisma 7, men klienten importeras nu från din
+                genererade output-sökväg istället för @prisma/client.
               </p>
             </div>
             <button
@@ -329,7 +330,7 @@ export default function PrismaQueriesGame() {
       <div className="mt-6 bg-gradient-to-r from-emerald-900 to-green-900 rounded-lg p-6 text-white border-2 border-emerald-500">
         <div className="flex items-center gap-2 mb-4">
           <div className="text-2xl">📖</div>
-          <h3 className="text-xl font-bold">Snabbfakta om Prisma Queries</h3>
+          <h3 className="text-xl font-bold">Snabbfakta om Prisma 7 Queries</h3>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
@@ -388,8 +389,8 @@ export default function PrismaQueriesGame() {
             <span className="font-semibold text-emerald-300">Tips:</span>
           </div>
           <p className="text-sm">
-            Prisma Client ger typade queries - du får autocomplete och
-            type-safety direkt från din schema!
+            I Prisma 7 importeras klienten från din output-sökväg (t.ex.
+            ./generated/prisma) och kräver en driver adapter!
           </p>
         </div>
       </div>
@@ -399,7 +400,7 @@ export default function PrismaQueriesGame() {
         <div className="flex items-center gap-3 mb-6">
           <div className="text-3xl">📚</div>
           <h2 className="text-2xl font-bold text-emerald-400">
-            Prisma Queries i djupet
+            Prisma 7 Queries i djupet
           </h2>
         </div>
 
@@ -413,7 +414,10 @@ export default function PrismaQueriesGame() {
                 <p className="text-gray-300">Skapar en ny post i databasen.</p>
                 <div className="bg-gray-900 p-2 rounded text-xs font-mono">
                   <pre>
-                    {`const user = await prisma.user.create({
+                    {`// Prisma 7: import från output-sökväg
+import { PrismaClient } from "./generated/prisma"
+
+const user = await prisma.user.create({
   data: {
     email: "anna@example.com",
     name: "Anna"
@@ -523,8 +527,8 @@ await prisma.user.deleteMany({
                   Update eller create
                 </p>
                 <p>
-                  • <strong className="text-emerald-300">orderBy:</strong>{" "}
-                  Sortera resultat
+                  • <strong className="text-emerald-300">$extends():</strong>{" "}
+                  Utöka klienten (v7, ersätter $use)
                 </p>
                 <p>
                   • <strong className="text-emerald-300">include:</strong> Inkl.

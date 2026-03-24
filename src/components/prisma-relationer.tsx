@@ -201,7 +201,7 @@ export default function PrismaRelationerGame() {
       <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-pink-400 mb-2">
-            🔗 Matcha Prisma Relationer!
+            🔗 Matcha Prisma 7 Relationer!
           </div>
           <div className="text-sm text-gray-300">
             Klicka på två kort som hör ihop: relationstyp och dess förklaring.
@@ -292,8 +292,9 @@ export default function PrismaRelationerGame() {
             </p>
             <div className="bg-pink-100 p-4 rounded-lg mb-6">
               <p className="text-sm text-gray-700">
-                <strong>Prisma Relationer:</strong> Att förstå relationer mellan
-                modeller är nyckeln till effektiv databasdesign.
+                <strong>Prisma 7 Relationer:</strong> Relationssyntaxen i schemat
+                är densamma i Prisma 7, men datan hämtas nu via driver adapters
+                istället för Rust-engine.
               </p>
             </div>
             <button
@@ -310,7 +311,7 @@ export default function PrismaRelationerGame() {
       <div className="mt-6 bg-gradient-to-r from-pink-900 to-purple-900 rounded-lg p-6 text-white border-2 border-pink-500">
         <div className="flex items-center gap-2 mb-4">
           <div className="text-2xl">📖</div>
-          <h3 className="text-xl font-bold">Snabbfakta om Prisma Relationer</h3>
+          <h3 className="text-xl font-bold">Snabbfakta om Prisma 7 Relationer</h3>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
@@ -369,8 +370,8 @@ export default function PrismaRelationerGame() {
             <span className="font-semibold text-pink-300">Tips:</span>
           </div>
           <p className="text-sm">
-            Välj rätt relationstyp från början - det påverkar hela din
-            databasdesign och applikationslogik!
+            Relationssyntaxen i Prisma 7 är oförändrad — men MongoDB stöds inte
+            ännu i v7. Använd v6 om du behöver MongoDB-relationer.
           </p>
         </div>
       </div>
@@ -380,7 +381,7 @@ export default function PrismaRelationerGame() {
         <div className="flex items-center gap-3 mb-6">
           <div className="text-3xl">📚</div>
           <h2 className="text-2xl font-bold text-pink-400">
-            Prisma Relationer i djupet
+            Prisma 7 Relationer i djupet
           </h2>
         </div>
 
