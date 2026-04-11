@@ -340,6 +340,157 @@ export default function Home() {
           </div>
         </section>
 
+        {/* C# Spel */}
+        <section aria-labelledby="csharp-heading" className="mt-8">
+          <h2
+            id="csharp-heading"
+            className="text-2xl font-bold text-violet-300 mb-4 text-center"
+          >
+            💜 C# Spel
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link
+              href="/csharp/datatyper"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-violet-300 transition-colors focus:outline-none focus:ring-4 focus:ring-violet-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - Datatyper
+                </h3>
+                <span className="text-violet-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Träna på int, string, bool, double och fler C#-typer.
+              </p>
+              <div className="mt-4 inline-block bg-violet-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/csharp/oop"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-green-300 transition-colors focus:outline-none focus:ring-4 focus:ring-green-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - OOP
+                </h3>
+                <span className="text-green-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                class, interface, abstract, override och mer.
+              </p>
+              <div className="mt-4 inline-block bg-green-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/csharp/syntax-grund"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-blue-300 transition-colors focus:outline-none focus:ring-4 focus:ring-blue-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - Grundsyntax
+                </h3>
+                <span className="text-blue-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Matcha syntaxkoncept med kodexempel i C#.
+              </p>
+              <div className="mt-4 inline-block bg-blue-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/csharp/linq"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-orange-300 transition-colors focus:outline-none focus:ring-4 focus:ring-orange-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - LINQ
+                </h3>
+                <span className="text-orange-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Where, Select, GroupBy och fler LINQ-metoder.
+              </p>
+              <div className="mt-4 inline-block bg-orange-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/csharp/felhantering"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-red-300 transition-colors focus:outline-none focus:ring-4 focus:ring-red-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - Felhantering
+                </h3>
+                <span className="text-red-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                try, catch, finally, throw och vanliga undantag.
+              </p>
+              <div className="mt-4 inline-block bg-red-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/csharp/async"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-sky-300 transition-colors focus:outline-none focus:ring-4 focus:ring-sky-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - Async/Await
+                </h3>
+                <span className="text-sky-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                async, await, Task, CancellationToken och mer.
+              </p>
+              <div className="mt-4 inline-block bg-sky-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            <Link
+              href="/csharp/collections"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-emerald-300 transition-colors focus:outline-none focus:ring-4 focus:ring-emerald-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  C# - Collections
+                </h3>
+                <span className="text-emerald-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                List, Dictionary, HashSet, Queue, Stack och mer.
+              </p>
+              <div className="mt-4 inline-block bg-emerald-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+          </div>
+        </section>
+
         {/* Better Auth Spel */}
         <section aria-labelledby="better-auth-heading" className="mt-8">
           <h2
