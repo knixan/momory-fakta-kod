@@ -125,6 +125,90 @@ export default function Home() {
                 Spela
               </div>
             </Link>
+
+            {/* TYPESCRIPT - GENERICS */}
+            <Link
+              href="/ts/generics"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-indigo-300 transition-colors focus:outline-none focus:ring-4 focus:ring-indigo-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  TypeScript - Generics
+                </h3>
+                <span className="text-indigo-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Generiska funktioner, klasser och constraints.
+              </p>
+              <div className="mt-4 inline-block bg-indigo-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            {/* TYPESCRIPT - UTILITY TYPES */}
+            <Link
+              href="/ts/utility-types"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-teal-300 transition-colors focus:outline-none focus:ring-4 focus:ring-teal-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  TypeScript - Utility Types
+                </h3>
+                <span className="text-teal-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                Partial, Pick, Omit, Record och fler.
+              </p>
+              <div className="mt-4 inline-block bg-teal-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            {/* TYPESCRIPT - TYPE NARROWING */}
+            <Link
+              href="/ts/type-narrowing"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-rose-300 transition-colors focus:outline-none focus:ring-4 focus:ring-rose-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  TypeScript - Type Narrowing
+                </h3>
+                <span className="text-rose-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                typeof, instanceof, in och egna type guards.
+              </p>
+              <div className="mt-4 inline-block bg-rose-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
+
+            {/* TYPESCRIPT - AVANCERADE TYPER */}
+            <Link
+              href="/ts/avancerade-typer"
+              className="group bg-black/40 border border-white/20 rounded-xl p-5 hover:bg-black/50 hover:border-amber-300 transition-colors focus:outline-none focus:ring-4 focus:ring-amber-400/40"
+            >
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">
+                  TypeScript - Avancerade typer
+                </h3>
+                <span className="text-amber-300 text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+              <p className="mt-2 text-gray-300 text-sm">
+                keyof, conditional types, mapped types och satisfies.
+              </p>
+              <div className="mt-4 inline-block bg-amber-400 text-gray-900 font-semibold px-4 py-2 rounded-md">
+                Spela
+              </div>
+            </Link>
           </div>
         </section>
 
