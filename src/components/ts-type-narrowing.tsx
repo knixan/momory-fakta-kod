@@ -150,7 +150,7 @@ export default function TsTypeNarrowingGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-rose-300">
           🔍 Matcha Type Narrowing &amp; Guards
         </div>
@@ -206,7 +206,7 @@ export default function TsTypeNarrowingGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -237,7 +237,7 @@ export default function TsTypeNarrowingGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔤</span>
               <span className="font-semibold text-rose-300">typeof</span>
@@ -245,7 +245,7 @@ export default function TsTypeNarrowingGame() {
             <p>Fungerar för primitiver: string, number, boolean m.fl.</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🏷️</span>
               <span className="font-semibold text-pink-300">
@@ -255,7 +255,7 @@ export default function TsTypeNarrowingGame() {
             <p>Fungerar för klasser och deras instanser</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔑</span>
               <span className="font-semibold text-fuchsia-300">in</span>
@@ -263,7 +263,7 @@ export default function TsTypeNarrowingGame() {
             <p>Kollar om en egenskap existerar på objektet</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎯</span>
               <span className="font-semibold text-orange-300">
@@ -273,7 +273,7 @@ export default function TsTypeNarrowingGame() {
             <p>En gemensam &quot;tag&quot;-egenskap skiljer varianterna åt</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🛠️</span>
               <span className="font-semibold text-amber-300">
@@ -283,7 +283,7 @@ export default function TsTypeNarrowingGame() {
             <p>Egen funktion: `param is Typ`</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🚫</span>
               <span className="font-semibold text-violet-300">
@@ -294,7 +294,7 @@ export default function TsTypeNarrowingGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-rose-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-rose-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-rose-300">Tips:</span>
@@ -318,7 +318,7 @@ export default function TsTypeNarrowingGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-rose-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-rose-500">
               <h3 className="text-lg font-bold text-rose-400 mb-3">
                 🔤 typeof-guard
               </h3>
@@ -340,7 +340,7 @@ export default function TsTypeNarrowingGame() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 🏷️ instanceof-guard
               </h3>
@@ -365,7 +365,7 @@ function speak(animal: Dog | Cat) {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-fuchsia-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-fuchsia-500">
               <h3 className="text-lg font-bold text-fuchsia-400 mb-3">
                 🔑 in-guard
               </h3>
@@ -392,7 +392,7 @@ function move(pet: Fish | Bird) {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 🎯 Discriminated unions
               </h3>
@@ -418,7 +418,7 @@ function handle(result: Result) {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
               <h3 className="text-lg font-bold text-amber-400 mb-3">
                 🛠️ Egna type predicates
               </h3>
@@ -441,7 +441,7 @@ if (isFish(pet)) pet.swim()`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-violet-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-violet-500">
               <h3 className="text-lg font-bold text-violet-400 mb-3">
                 🚫 Exhaustiveness med never
               </h3>

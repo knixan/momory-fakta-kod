@@ -99,7 +99,7 @@ export default function CsAsyncGame() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-sky-400 mb-2">🧠 Matcha C# async/await!</div>
           <div className="text-sm text-gray-300">Klicka på ett nyckelord och dess förklaring. Matchade par försvinner.</div>
@@ -128,7 +128,7 @@ export default function CsAsyncGame() {
       </div>
 
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -147,21 +147,21 @@ export default function CsAsyncGame() {
           <h3 className="text-xl font-bold">Snabbfakta om async/await i C#</h3>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-yellow-300">Grundregel</span>
             <p>async all the way – await uppifrån och ned i anropskedjan</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-red-300">Undvik</span>
             <p>.Result, .Wait() – riskerar deadlock i synkron kontext</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-green-300">Namnkonvention</span>
             <p>Asynkrona metoder namnges med Async-suffix: GetDataAsync()</p>
           </div>
         </div>
 
-        <div className="mt-4 bg-black bg-opacity-50 rounded p-3 text-sm font-mono text-green-300">
+        <div className="mt-4 bg-black/50 rounded p-3 text-sm font-mono text-green-300">
           <p className="text-gray-400 font-sans text-xs mb-1">// Typiskt async-mönster</p>
           <p>public async Task{"<"}string{">"} HämtaDataAsync(int id,</p>
           <p className="ml-4">CancellationToken ct = default)</p>
@@ -172,7 +172,7 @@ export default function CsAsyncGame() {
           <p>{"}"}</p>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-sky-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-sky-400">
           <p className="text-sm italic">&ldquo;Asynkron kod frigör trådar medan man väntar på I/O – det är nyckeln till skalbara .NET-applikationer.&rdquo;</p>
         </div>
       </div>

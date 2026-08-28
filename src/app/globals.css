@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+/*
+  Appen är designad som ett mörkt tema rakt igenom (alla spel förutsätter
+  mörk bakgrund + ljus text). Vi låser därför temat istället för att följa
+  systemets ljus/mörk-inställning - annars får sidan en vit "kant" runt de
+  mörka spelkorten när OS:et står i ljust läge.
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b0d12;
+  --foreground: #f2f3f5;
 }
 
 @theme inline {
@@ -12,15 +18,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+  Mjukare svart/vitt för ögonen.
+
+  Alla spel bygger sina paneler och kort på ren "black"/"white" (t.ex.
+  bg-black/40, text-white). Rent svart (#000) mot rent vitt (#fff) ger
+  extremt hög kontrast som känns hård och tröttar ögonen i mörkt läge.
+  Genom att skriva om Tailwinds färgvariabler för black/white får HELA
+  appen ett mjukare, mer enhetligt utseende utan att röra varje spelfil -
+  varje bg-black/*, text-white, border-white/* etc. ärver automatiskt de
+  nya, mjukare tonerna.
+*/
+@theme {
+  --color-black: #0d0f14;
+  --color-white: #f2f3f5;
 }

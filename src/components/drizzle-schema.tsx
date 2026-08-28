@@ -150,7 +150,7 @@ export default function DrizzleSchemaGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-emerald-300">
           🟢 Matcha Drizzle Schema
         </div>
@@ -206,7 +206,7 @@ export default function DrizzleSchemaGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -235,7 +235,7 @@ export default function DrizzleSchemaGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🗂️</span>
               <span className="font-semibold text-emerald-300">
@@ -245,7 +245,7 @@ export default function DrizzleSchemaGame() {
             <p>Definierar en Postgres-tabell i TypeScript</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔑</span>
               <span className="font-semibold text-lime-300">
@@ -255,7 +255,7 @@ export default function DrizzleSchemaGame() {
             <p>serial/uuid + .primaryKey()</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔗</span>
               <span className="font-semibold text-green-300">
@@ -265,7 +265,7 @@ export default function DrizzleSchemaGame() {
             <p>.references(() =&gt; table.column)</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧬</span>
               <span className="font-semibold text-teal-300">
@@ -275,7 +275,7 @@ export default function DrizzleSchemaGame() {
             <p>$inferSelect / $inferInsert ger dig typer gratis</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧩</span>
               <span className="font-semibold text-cyan-300">
@@ -285,7 +285,7 @@ export default function DrizzleSchemaGame() {
             <p>Beskriver kopplingar för query-API:et</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✅</span>
               <span className="font-semibold text-yellow-300">
@@ -296,7 +296,7 @@ export default function DrizzleSchemaGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-emerald-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-emerald-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-emerald-300">Tips:</span>
@@ -319,7 +319,7 @@ export default function DrizzleSchemaGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 🗂️ Definiera en tabell
               </h3>
@@ -342,7 +342,7 @@ export const users = pgTable("users", {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 🔗 Foreign keys
               </h3>
@@ -363,7 +363,7 @@ export const users = pgTable("users", {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🧬 Härledda typer
               </h3>
@@ -384,7 +384,7 @@ function createUser(data: NewUser) { ... }`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 🧩 Relations-API
               </h3>
@@ -407,7 +407,7 @@ export const postsRelations = relations(posts, ({ one }) => ({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 ✅ Constraints &amp; defaults
               </h3>
@@ -427,7 +427,7 @@ email: text("email").notNull().unique(),`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🧱 Index
               </h3>

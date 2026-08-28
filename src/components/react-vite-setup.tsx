@@ -133,7 +133,7 @@ export default function ReactViteSetupGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-violet-300">
           ⚡ Matcha Vite Setup
         </div>
@@ -191,7 +191,7 @@ export default function ReactViteSetupGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -220,7 +220,7 @@ export default function ReactViteSetupGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🚀</span>
               <span className="font-semibold text-violet-300">
@@ -230,7 +230,7 @@ export default function ReactViteSetupGame() {
             <p>Native ESM, ingen bundling i dev-läge</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔥</span>
               <span className="font-semibold text-yellow-300">HMR</span>
@@ -238,7 +238,7 @@ export default function ReactViteSetupGame() {
             <p>Instant uppdatering utan att tappa state</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-purple-300">
@@ -248,7 +248,7 @@ export default function ReactViteSetupGame() {
             <p>Optimerad produktionsbygge med Rollup</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔌</span>
               <span className="font-semibold text-amber-300">
@@ -258,7 +258,7 @@ export default function ReactViteSetupGame() {
             <p>@vitejs/plugin-react m.fl.</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌱</span>
               <span className="font-semibold text-fuchsia-300">
@@ -268,7 +268,7 @@ export default function ReactViteSetupGame() {
             <p>import.meta.env.VITE_*</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧭</span>
               <span className="font-semibold text-orange-300">
@@ -279,7 +279,7 @@ export default function ReactViteSetupGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-violet-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-violet-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-violet-300">Tips:</span>
@@ -302,7 +302,7 @@ export default function ReactViteSetupGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-violet-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-violet-500">
               <h3 className="text-lg font-bold text-violet-400 mb-3">
                 🚀 Skapa ett nytt projekt
               </h3>
@@ -321,7 +321,7 @@ npm run dev`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 ⚙️ vite.config.ts
               </h3>
@@ -346,7 +346,7 @@ export default defineConfig({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 🔥 HMR i praktiken
               </h3>
@@ -366,7 +366,7 @@ export default defineConfig({
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
               <h3 className="text-lg font-bold text-amber-400 mb-3">
                 🌱 Environment Variables
               </h3>
@@ -386,7 +386,7 @@ const url = import.meta.env.VITE_API_URL`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-fuchsia-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-fuchsia-500">
               <h3 className="text-lg font-bold text-fuchsia-400 mb-3">
                 🔌 Vanliga plugins
               </h3>
@@ -406,7 +406,7 @@ const url = import.meta.env.VITE_API_URL`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 📁 Projektstruktur
               </h3>

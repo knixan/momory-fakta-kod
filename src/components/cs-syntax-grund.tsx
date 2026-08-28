@@ -261,7 +261,7 @@ export default function CsSyntaxGrundGame() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-blue-400 mb-2">
             🧠 Matcha C# syntax med kod!
@@ -336,7 +336,7 @@ export default function CsSyntaxGrundGame() {
       </div>
 
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -366,28 +366,28 @@ export default function CsSyntaxGrundGame() {
           <h3 className="text-xl font-bold">Snabbfakta om C# grundsyntax</h3>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-yellow-300">Variabler</span>
             </div>
             <p>int, var, const, readonly</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔁</span>
               <span className="font-semibold text-red-300">Loopar</span>
             </div>
             <p>for, foreach, while, do-while</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌿</span>
               <span className="font-semibold text-green-300">Villkor</span>
             </div>
             <p>if/else, switch, ternary ? :</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔧</span>
               <span className="font-semibold text-orange-300">Metoder</span>
@@ -396,7 +396,7 @@ export default function CsSyntaxGrundGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-blue-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-blue-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💭</span>
             <span className="font-semibold text-yellow-300">Tips:</span>

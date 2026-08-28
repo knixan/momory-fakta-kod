@@ -317,7 +317,7 @@ export default function MemoryGame() {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik och instruktioner */}
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-yellow-400 mb-2">
             🎯 Matcha TypeScript-koncept!
@@ -384,7 +384,7 @@ export default function MemoryGame() {
                   ? "ring-4 ring-yellow-400 border-yellow-300 shadow-yellow-200"
                   : "border-gray-300"
               }
-              ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
+              ${card.isMatched ? "ring-4 ring-green-400" : ""}
               transition-all duration-300
             `}
             >
@@ -405,7 +405,7 @@ export default function MemoryGame() {
 
       {/* Vinst-meddelande */}
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -438,7 +438,7 @@ export default function MemoryGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📅</span>
               <span className="font-semibold text-yellow-300">Utgiven</span>
@@ -446,7 +446,7 @@ export default function MemoryGame() {
             <p>2012 av Microsoft</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">�</span>
               <span className="font-semibold text-red-300">Superset</span>
@@ -454,7 +454,7 @@ export default function MemoryGame() {
             <p>Utökar JavaScript</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">�️</span>
               <span className="font-semibold text-green-300">Typer</span>
@@ -462,7 +462,7 @@ export default function MemoryGame() {
             <p>Statisk typning</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-orange-300">Kompilering</span>
@@ -470,7 +470,7 @@ export default function MemoryGame() {
             <p>Till JavaScript</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🛡️</span>
               <span className="font-semibold text-purple-300">Säkerhet</span>
@@ -478,7 +478,7 @@ export default function MemoryGame() {
             <p>Fångar fel tidigt</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📈</span>
               <span className="font-semibold text-blue-300">Popularitet</span>
@@ -486,7 +486,7 @@ export default function MemoryGame() {
             <p>Används av stora företag</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">�</span>
               <span className="font-semibold text-cyan-300">IDE-stöd</span>
@@ -494,7 +494,7 @@ export default function MemoryGame() {
             <p>Autokomplettering</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌐</span>
               <span className="font-semibold text-emerald-300">
@@ -514,34 +514,34 @@ export default function MemoryGame() {
             </h4>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Interface</p>
               <p>
                 Definierar strukturen för ett objekt, som en mall för vilka
                 egenskaper och metoder ett objekt ska ha.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Type Inference</p>
               <p>
                 TypeScript gissar automatiskt typen baserat på värdet, utan att
                 du behöver ange den explicit.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Union Types</p>
               <p>
                 En variabel kan ha flera möjliga typer, t.ex. string | number.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Generics</p>
               <p>
                 Tillåter att skapa återanvändbara komponenter som fungerar med
                 olika typer.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">
                 Optional Properties
               </p>
@@ -549,28 +549,28 @@ export default function MemoryGame() {
                 Egenskaper som inte behöver vara definierade, markerade med ?.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Type Guards</p>
               <p>
                 Funktioner som hjälper TypeScript att förstå vilken typ en
                 variabel har vid runtime.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Enums</p>
               <p>
                 Uppräknade typer som gör det lättare att arbeta med namngivna
                 konstanter.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Modules</p>
               <p>
                 Organiserar kod i separata filer som kan importeras och
                 exporteras.
               </p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Decorators</p>
               <p>
                 Funktioner som kan modifiera klasser, metoder eller egenskaper
@@ -580,7 +580,7 @@ export default function MemoryGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-yellow-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-yellow-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💭</span>
             <span className="font-semibold text-yellow-300">Reflektion:</span>
@@ -605,7 +605,7 @@ export default function MemoryGame() {
           {/* Vänster kolumn */}
           <div className="space-y-6">
             {/* Vad är TypeScript? */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-red-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-red-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">🔥</span>
                 <h3 className="text-lg font-bold text-red-400">
@@ -631,7 +631,7 @@ export default function MemoryGame() {
             </div>
 
             {/* Varför TypeScript? */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">⚔️</span>
                 <h3 className="text-lg font-bold text-blue-400">
@@ -669,7 +669,7 @@ export default function MemoryGame() {
             </div>
 
             {/* Grundläggande typer */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">💔</span>
                 <h3 className="text-lg font-bold text-purple-400">
@@ -710,7 +710,7 @@ export default function MemoryGame() {
           {/* Höger kolumn */}
           <div className="space-y-6">
             {/* Avancerade funktioner */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">👑</span>
                 <h3 className="text-lg font-bold text-green-400">
@@ -770,7 +770,7 @@ export default function MemoryGame() {
             </div>
 
             {/* Komma igång */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">💀</span>
                 <h3 className="text-lg font-bold text-orange-400">
@@ -803,7 +803,7 @@ export default function MemoryGame() {
                   <code className="bg-gray-700 px-1 rounded">tsc</code>
                 </p>
               </div>
-              <div className="mt-3 p-2 bg-blue-900 bg-opacity-30 rounded text-xs">
+              <div className="mt-3 p-2 bg-blue-900/30 rounded text-xs">
                 <p className="text-blue-200">
                   TypeScript gör JavaScript-utveckling mer robust och njutbar!
                 </p>

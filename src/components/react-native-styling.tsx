@@ -133,7 +133,7 @@ export default function ReactNativeStylingGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-teal-300">
           🎨 Matcha Styling &amp; Platform APIs
         </div>
@@ -189,7 +189,7 @@ export default function ReactNativeStylingGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -220,7 +220,7 @@ export default function ReactNativeStylingGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎨</span>
               <span className="font-semibold text-teal-300">
@@ -230,7 +230,7 @@ export default function ReactNativeStylingGame() {
             <p>JS-objekt, inte riktig CSS</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📐</span>
               <span className="font-semibold text-cyan-300">Flexbox</span>
@@ -238,7 +238,7 @@ export default function ReactNativeStylingGame() {
             <p>column är default flexDirection</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📱</span>
               <span className="font-semibold text-sky-300">Platform</span>
@@ -246,7 +246,7 @@ export default function ReactNativeStylingGame() {
             <p>Platform.OS / Platform.select()</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📏</span>
               <span className="font-semibold text-emerald-300">
@@ -256,7 +256,7 @@ export default function ReactNativeStylingGame() {
             <p>Skärmens bredd/höjd i dp</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🛡️</span>
               <span className="font-semibold text-indigo-300">
@@ -266,7 +266,7 @@ export default function ReactNativeStylingGame() {
             <p>Undviker notch och statusbar</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔢</span>
               <span className="font-semibold text-purple-300">
@@ -277,7 +277,7 @@ export default function ReactNativeStylingGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-teal-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-teal-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-teal-300">Tips:</span>
@@ -301,7 +301,7 @@ export default function ReactNativeStylingGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 🎨 StyleSheet.create
               </h3>
@@ -325,7 +325,7 @@ export default function ReactNativeStylingGame() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 📐 Flexbox-layout
               </h3>
@@ -345,7 +345,7 @@ export default function ReactNativeStylingGame() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 📱 Platform-specifik kod
               </h3>
@@ -370,7 +370,7 @@ if (Platform.OS === "ios") { ... }`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 📏 Dimensions &amp; responsivitet
               </h3>
@@ -392,7 +392,7 @@ const styles = StyleSheet.create({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-indigo-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-indigo-500">
               <h3 className="text-lg font-bold text-indigo-400 mb-3">
                 🛡️ SafeAreaView
               </h3>
@@ -412,7 +412,7 @@ const styles = StyleSheet.create({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 🌗 Dark Mode
               </h3>

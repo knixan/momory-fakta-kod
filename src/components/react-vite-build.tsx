@@ -133,7 +133,7 @@ export default function ReactViteBuildGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-amber-300">
           📦 Matcha Vite Build &amp; Env
         </div>
@@ -191,7 +191,7 @@ export default function ReactViteBuildGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -222,7 +222,7 @@ export default function ReactViteBuildGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-amber-300">
@@ -232,7 +232,7 @@ export default function ReactViteBuildGame() {
             <p>Bundlar produktionskoden effektivt</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✂️</span>
               <span className="font-semibold text-orange-300">
@@ -242,7 +242,7 @@ export default function ReactViteBuildGame() {
             <p>Laddar bara koden som behövs per route</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌳</span>
               <span className="font-semibold text-yellow-300">
@@ -252,7 +252,7 @@ export default function ReactViteBuildGame() {
             <p>Tar bort oanvänd kod automatiskt</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔑</span>
               <span className="font-semibold text-violet-300">
@@ -262,7 +262,7 @@ export default function ReactViteBuildGame() {
             <p>.env, .env.production, .env.development</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🗂️</span>
               <span className="font-semibold text-pink-300">
@@ -272,7 +272,7 @@ export default function ReactViteBuildGame() {
             <p>Filnamn med hash för cache-busting</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">👀</span>
               <span className="font-semibold text-cyan-300">
@@ -283,7 +283,7 @@ export default function ReactViteBuildGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-amber-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-amber-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-amber-300">Tips:</span>
@@ -306,7 +306,7 @@ export default function ReactViteBuildGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
               <h3 className="text-lg font-bold text-amber-400 mb-3">
                 📦 Bygga för produktion
               </h3>
@@ -327,7 +327,7 @@ npm run preview
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 ✂️ Code Splitting med lazy
               </h3>
@@ -349,7 +349,7 @@ const Dashboard = lazy(() => import("./Dashboard"))
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🌳 Tree Shaking
               </h3>
@@ -371,7 +371,7 @@ import _ from "lodash"`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-violet-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-violet-500">
               <h3 className="text-lg font-bold text-violet-400 mb-3">
                 🔑 Environment-lägen
               </h3>
@@ -392,7 +392,7 @@ vite build --mode staging
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 🗂️ Statiska assets
               </h3>
@@ -411,7 +411,7 @@ vite build --mode staging
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 ⚙️ Manuella chunks
               </h3>

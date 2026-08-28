@@ -150,7 +150,7 @@ export default function NodeModulesGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-green-300">
           🟩 Matcha Node.js Moduler
         </div>
@@ -206,7 +206,7 @@ export default function NodeModulesGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -236,7 +236,7 @@ export default function NodeModulesGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-green-300">
@@ -246,7 +246,7 @@ export default function NodeModulesGame() {
             <p>require/module.exports, Node.js standard historiskt</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📥</span>
               <span className="font-semibold text-lime-300">
@@ -256,7 +256,7 @@ export default function NodeModulesGame() {
             <p>import/export, moderna standarden</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧾</span>
               <span className="font-semibold text-emerald-300">
@@ -266,7 +266,7 @@ export default function NodeModulesGame() {
             <p>&quot;type&quot;: &quot;module&quot; styr default-läge</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📂</span>
               <span className="font-semibold text-yellow-300">
@@ -276,7 +276,7 @@ export default function NodeModulesGame() {
             <p>Filändelser som tvingar ett specifikt modulsystem</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌍</span>
               <span className="font-semibold text-teal-300">
@@ -286,7 +286,7 @@ export default function NodeModulesGame() {
             <p>__dirname/__filename finns endast i CommonJS</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧩</span>
               <span className="font-semibold text-cyan-300">
@@ -297,7 +297,7 @@ export default function NodeModulesGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-green-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-green-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-green-300">Tips:</span>
@@ -320,7 +320,7 @@ export default function NodeModulesGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 📦 CommonJS
               </h3>
@@ -342,7 +342,7 @@ console.log(add(2, 3))`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 📥 ES Modules
               </h3>
@@ -363,7 +363,7 @@ console.log(add(2, 3))`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 🧾 Aktivera ESM i package.json
               </h3>
@@ -384,7 +384,7 @@ console.log(add(2, 3))`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 📂 __dirname i ESM
               </h3>
@@ -404,7 +404,7 @@ const __dirname = dirname(__filename)`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 🧩 Dynamic import()
               </h3>
@@ -423,7 +423,7 @@ const __dirname = dirname(__filename)`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 📊 CommonJS vs ESM
               </h3>

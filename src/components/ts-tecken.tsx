@@ -293,7 +293,7 @@ export default function SymbolsGame() {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik och instruktioner */}
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-yellow-400 mb-2">
             🔤 Matcha TypeScript-symboler!
@@ -360,7 +360,7 @@ export default function SymbolsGame() {
                   ? "ring-4 ring-yellow-400 border-yellow-300 shadow-yellow-200"
                   : "border-gray-300"
               }
-              ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
+              ${card.isMatched ? "ring-4 ring-green-400" : ""}
               transition-all duration-300
             `}
             >
@@ -380,7 +380,7 @@ export default function SymbolsGame() {
 
       {/* Vinst-meddelande */}
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -414,7 +414,7 @@ export default function SymbolsGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔤</span>
               <span className="font-semibold text-yellow-300">
@@ -424,7 +424,7 @@ export default function SymbolsGame() {
             <p>: = ; . ,</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧩</span>
               <span className="font-semibold text-red-300">Typ-symboler</span>
@@ -432,7 +432,7 @@ export default function SymbolsGame() {
             <p>| & ? ! as</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧮</span>
               <span className="font-semibold text-green-300">
@@ -442,7 +442,7 @@ export default function SymbolsGame() {
             <p>() {`{}`} [] =&gt; &lt; &gt;</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚙️</span>
               <span className="font-semibold text-orange-300">
@@ -462,46 +462,46 @@ export default function SymbolsGame() {
             </h4>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">:</p>
               <p>Typangivelse - anger typen av en variabel</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">=</p>
               <p>Tilldelning - ger ett värde till en variabel</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">.</p>
               <p>Egenskapsåtkomst - når egenskaper i objekt</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">|</p>
               <p>Union - flera möjliga typer</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">?</p>
               <p>Valfritt - egenskapen kan utelämnas</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">=&gt;</p>
               <p>Arrow function - kompakt funktionssyntax</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">[]</p>
               <p>Array - lista av värden av samma typ</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">{}</p>
               <p>Objekt - samling av egenskaper</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">&lt; &gt;</p>
               <p>Generics - typ-parametrar för flexibilitet</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-yellow-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-yellow-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💭</span>
             <span className="font-semibold text-yellow-300">Reflektion:</span>
@@ -526,7 +526,7 @@ export default function SymbolsGame() {
           {/* Vänster kolumn */}
           <div className="space-y-6">
             {/* Grundläggande symboler */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-red-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-red-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">🔤</span>
                 <h3 className="text-lg font-bold text-red-400">
@@ -554,7 +554,7 @@ export default function SymbolsGame() {
             </div>
 
             {/* Typ-relaterade symboler */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">🧩</span>
                 <h3 className="text-lg font-bold text-blue-400">
@@ -593,7 +593,7 @@ export default function SymbolsGame() {
           {/* Höger kolumn */}
           <div className="space-y-6">
             {/* Funktionssymboler */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">🧮</span>
                 <h3 className="text-lg font-bold text-green-400">
@@ -648,7 +648,7 @@ export default function SymbolsGame() {
             </div>
 
             {/* Varför symboler är viktiga */}
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xl">💀</span>
                 <h3 className="text-lg font-bold text-orange-400">
@@ -678,7 +678,7 @@ export default function SymbolsGame() {
                   Utnyttja språkets fulla potential
                 </p>
               </div>
-              <div className="mt-3 p-2 bg-blue-900 bg-opacity-30 rounded text-xs">
+              <div className="mt-3 p-2 bg-blue-900/30 rounded text-xs">
                 <p className="text-blue-200">
                   Symboler är som alfabetet - nödvändiga för att uttrycka
                   komplexa idéer i kod!

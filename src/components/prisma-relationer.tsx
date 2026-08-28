@@ -198,7 +198,7 @@ export default function PrismaRelationerGame() {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik */}
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-pink-400 mb-2">
             🔗 Matcha Prisma 7 Relationer!
@@ -262,7 +262,7 @@ export default function PrismaRelationerGame() {
                   ? "ring-4 ring-pink-400 border-pink-300 shadow-pink-200"
                   : "border-gray-300"
               }
-              ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
+              ${card.isMatched ? "ring-4 ring-green-400" : ""}
               transition-all duration-300
             `}
             >
@@ -282,7 +282,7 @@ export default function PrismaRelationerGame() {
 
       {/* Vinst-meddelande */}
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -315,7 +315,7 @@ export default function PrismaRelationerGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">1️⃣</span>
               <span className="font-semibold text-pink-300">One-to-One</span>
@@ -323,7 +323,7 @@ export default function PrismaRelationerGame() {
             <p>En-till-en relation</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📚</span>
               <span className="font-semibold text-blue-300">One-to-Many</span>
@@ -331,7 +331,7 @@ export default function PrismaRelationerGame() {
             <p>En-till-många relation</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔀</span>
               <span className="font-semibold text-green-300">Many-to-Many</span>
@@ -339,7 +339,7 @@ export default function PrismaRelationerGame() {
             <p>Många-till-många relation</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔑</span>
               <span className="font-semibold text-yellow-300">fields</span>
@@ -347,7 +347,7 @@ export default function PrismaRelationerGame() {
             <p>Anger främmande nyckel</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎯</span>
               <span className="font-semibold text-orange-300">references</span>
@@ -355,7 +355,7 @@ export default function PrismaRelationerGame() {
             <p>Pekar på refererat fält</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔗</span>
               <span className="font-semibold text-purple-300">@relation</span>
@@ -364,7 +364,7 @@ export default function PrismaRelationerGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-pink-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-pink-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-pink-300">Tips:</span>
@@ -387,7 +387,7 @@ export default function PrismaRelationerGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 1️⃣ One-to-One
               </h3>
@@ -413,7 +413,7 @@ model Profile {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <h3 className="text-lg font-bold text-blue-400 mb-3">
                 📚 One-to-Many
               </h3>
@@ -440,7 +440,7 @@ model Post {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🔀 Many-to-Many
               </h3>
@@ -473,7 +473,7 @@ model CourseEnrollment {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🎯 Viktiga begrepp
               </h3>

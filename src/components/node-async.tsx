@@ -150,7 +150,7 @@ export default function NodeAsyncGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-lime-300">
           🔁 Matcha Event Loop &amp; Async
         </div>
@@ -208,7 +208,7 @@ export default function NodeAsyncGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -239,7 +239,7 @@ export default function NodeAsyncGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔂</span>
               <span className="font-semibold text-lime-300">
@@ -249,7 +249,7 @@ export default function NodeAsyncGame() {
             <p>Faser: timers, pending, poll, check, close</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-green-300">
@@ -259,7 +259,7 @@ export default function NodeAsyncGame() {
             <p>Promises och nextTick körs mellan varje fas</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⏱️</span>
               <span className="font-semibold text-emerald-300">
@@ -269,7 +269,7 @@ export default function NodeAsyncGame() {
             <p>setTimeout, setInterval, I/O-callbacks</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🤝</span>
               <span className="font-semibold text-teal-300">Promise</span>
@@ -277,7 +277,7 @@ export default function NodeAsyncGame() {
             <p>Representerar ett framtida värde</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✍️</span>
               <span className="font-semibold text-cyan-300">
@@ -287,7 +287,7 @@ export default function NodeAsyncGame() {
             <p>Syntaktiskt socker ovanpå promises</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧵</span>
               <span className="font-semibold text-yellow-300">
@@ -298,7 +298,7 @@ export default function NodeAsyncGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-lime-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-lime-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-lime-300">Tips:</span>
@@ -321,7 +321,7 @@ export default function NodeAsyncGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 🔂 Körordning
               </h3>
@@ -341,7 +341,7 @@ console.log("4")
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🤝 Promise-kedjor
               </h3>
@@ -358,7 +358,7 @@ console.log("4")
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 ✍️ async/await
               </h3>
@@ -384,7 +384,7 @@ console.log("4")
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 🚀 Promise.all vs allSettled
               </h3>
@@ -404,7 +404,7 @@ const results = await Promise.allSettled([p1, p2])`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🧵 Blockera inte tråden
               </h3>
@@ -424,7 +424,7 @@ const data = await fs.promises.readFile("big.json")`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🛠️ EventEmitter
               </h3>

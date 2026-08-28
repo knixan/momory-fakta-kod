@@ -191,7 +191,7 @@ export default function ReactComponentsGame() {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik */}
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-blue-400 mb-2">
             ⚛️ Matcha React Components!
@@ -255,7 +255,7 @@ export default function ReactComponentsGame() {
                   ? "ring-4 ring-blue-400 border-blue-300 shadow-blue-200"
                   : "border-gray-300"
               }
-              ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
+              ${card.isMatched ? "ring-4 ring-green-400" : ""}
               transition-all duration-300
             `}
             >
@@ -275,7 +275,7 @@ export default function ReactComponentsGame() {
 
       {/* Vinst-meddelande */}
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -307,7 +307,7 @@ export default function ReactComponentsGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚛️</span>
               <span className="font-semibold text-blue-300">Functional</span>
@@ -315,7 +315,7 @@ export default function ReactComponentsGame() {
             <p>JavaScript-funktioner</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-cyan-300">Props</span>
@@ -323,7 +323,7 @@ export default function ReactComponentsGame() {
             <p>Data från förälder</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">👶</span>
               <span className="font-semibold text-green-300">Children</span>
@@ -331,7 +331,7 @@ export default function ReactComponentsGame() {
             <p>Nästlade element</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✨</span>
               <span className="font-semibold text-yellow-300">Pure</span>
@@ -339,7 +339,7 @@ export default function ReactComponentsGame() {
             <p>Optimerad rendering</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎮</span>
               <span className="font-semibold text-purple-300">Controlled</span>
@@ -347,7 +347,7 @@ export default function ReactComponentsGame() {
             <p>State-styrda inputs</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔄</span>
               <span className="font-semibold text-pink-300">Lifecycle</span>
@@ -356,7 +356,7 @@ export default function ReactComponentsGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-blue-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-blue-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-blue-300">Tips:</span>
@@ -379,7 +379,7 @@ export default function ReactComponentsGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <h3 className="text-lg font-bold text-blue-400 mb-3">
                 ⚛️ Functional Components
               </h3>
@@ -402,7 +402,7 @@ const Greeting = ({ name }: { name: string }) => {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">📦 Props</h3>
               <div className="space-y-2 text-sm">
                 <p className="text-gray-300">Skicka data mellan komponenter.</p>
@@ -424,7 +424,7 @@ function UserCard({ name, age, isActive }) {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 👶 Children Prop
               </h3>
@@ -454,7 +454,7 @@ function UserCard({ name, age, isActive }) {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 ✨ Pure Components
               </h3>
@@ -473,7 +473,7 @@ const ExpensiveComponent = memo(({ data }) => {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 🎮 Controlled Components
               </h3>
@@ -496,7 +496,7 @@ const ExpensiveComponent = memo(({ data }) => {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 🔄 Component Lifecycle
               </h3>

@@ -22,7 +22,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-900 via-gray-800 to-blue-900 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-slate-900 flex items-center justify-center">
       <div className="w-full max-w-5xl mx-auto px-6 py-12">
         <header className="text-center mb-8">
           <h1 className="text-5xl font-extrabold text-white mb-3 flex items-center justify-center gap-3">
@@ -1126,7 +1126,7 @@ export default function Home() {
         {/* Information */}
         <div
           id="info"
-          className="mt-10 text-left text-sm text-gray-200 bg-black bg-opacity-30 p-4 rounded"
+          className="mt-10 text-left text-sm text-gray-200 bg-black/30 p-4 rounded"
         >
           <h2 className="font-semibold text-yellow-300 mb-2">
             Hur fungerar spelen?

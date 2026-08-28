@@ -132,7 +132,7 @@ export default function ReactStateGame() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-purple-400 mb-2">
             🔄 Matcha State Management!
@@ -195,7 +195,7 @@ export default function ReactStateGame() {
       </div>
 
       {done && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -225,42 +225,42 @@ export default function ReactStateGame() {
           <h3 className="text-xl font-bold">Snabbfakta om State Management</h3>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📍</span>
               <span className="font-semibold text-purple-300">Local State</span>
             </div>
             <p>State i komponenten</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⬆️</span>
               <span className="font-semibold text-cyan-300">Lifting Up</span>
             </div>
             <p>Dela mellan barn</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌐</span>
               <span className="font-semibold text-green-300">Context</span>
             </div>
             <p>Global state</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-yellow-300">Redux</span>
             </div>
             <p>State management lib</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-orange-300">Zustand</span>
             </div>
             <p>Enkel state manager</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔮</span>
               <span className="font-semibold text-pink-300">Jotai</span>
@@ -268,7 +268,7 @@ export default function ReactStateGame() {
             <p>Atomic state</p>
           </div>
         </div>
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-purple-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-purple-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-purple-300">Tips:</span>
@@ -290,7 +290,7 @@ export default function ReactStateGame() {
         </div>
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 📍 Local State
               </h3>
@@ -307,7 +307,7 @@ const [isOpen, setIsOpen] = useState(false);
                 </div>
               </div>
             </div>
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 ⬆️ Lifting State Up
               </h3>
@@ -330,7 +330,7 @@ const [isOpen, setIsOpen] = useState(false);
             </div>
           </div>
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🌐 Context API
               </h3>
@@ -352,7 +352,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 📦 External Libraries
               </h3>

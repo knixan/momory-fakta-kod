@@ -261,7 +261,7 @@ export default function CsLinqGame() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-orange-400 mb-2">
             🧠 Matcha LINQ-metoder!
@@ -334,7 +334,7 @@ export default function CsLinqGame() {
       </div>
 
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -364,28 +364,28 @@ export default function CsLinqGame() {
           <h3 className="text-xl font-bold">Snabbfakta om LINQ</h3>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔍</span>
               <span className="font-semibold text-yellow-300">Filtrera</span>
             </div>
             <p>Where(), First(), Single()</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔄</span>
               <span className="font-semibold text-red-300">Transformera</span>
             </div>
             <p>Select(), SelectMany()</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📊</span>
               <span className="font-semibold text-green-300">Aggregera</span>
             </div>
             <p>Count(), Sum(), Min(), Max()</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🗂️</span>
               <span className="font-semibold text-orange-300">Gruppera</span>
@@ -400,14 +400,14 @@ export default function CsLinqGame() {
             <h4 className="text-lg font-bold text-cyan-300">LINQ-exempel</h4>
           </div>
           <div className="grid sm:grid-cols-2 gap-3 text-sm font-mono">
-            <div className="bg-black bg-opacity-50 rounded p-3 text-green-300">
+            <div className="bg-black/50 rounded p-3 text-green-300">
               <p className="text-gray-400 text-xs mb-1 font-sans">// Filtrera och transformera</p>
               <p>var vuxna = personer</p>
               <p className="ml-2">.Where(p =&gt; p.Ålder &gt;= 18)</p>
               <p className="ml-2">.Select(p =&gt; p.Namn)</p>
               <p className="ml-2">.ToList();</p>
             </div>
-            <div className="bg-black bg-opacity-50 rounded p-3 text-yellow-300">
+            <div className="bg-black/50 rounded p-3 text-yellow-300">
               <p className="text-gray-400 text-xs mb-1 font-sans">// Gruppera och räkna</p>
               <p>var grupper = orders</p>
               <p className="ml-2">.GroupBy(o =&gt; o.Stad)</p>
@@ -418,7 +418,7 @@ export default function CsLinqGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-orange-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-orange-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💭</span>
             <span className="font-semibold text-yellow-300">Reflektion:</span>

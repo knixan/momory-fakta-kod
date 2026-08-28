@@ -237,7 +237,7 @@ export default function BetterAuthSessions() {
         </div>
 
         {/* Spelstatistik */}
-        <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+        <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
           <div className="flex justify-between items-center flex-wrap gap-4">
             <div className="flex gap-6">
               <div className="text-center">
@@ -309,7 +309,7 @@ export default function BetterAuthSessions() {
 
         {/* Vinst-meddelande */}
         {gameCompleted && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
               <div className="text-6xl mb-4">🎉</div>
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -339,7 +339,7 @@ export default function BetterAuthSessions() {
           </div>
 
           <div className="space-y-4 text-sm">
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Säkra Cookies</p>
               <p>
                 Better Auth använder HttpOnly och Secure cookies för att skydda
@@ -347,7 +347,7 @@ export default function BetterAuthSessions() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">CSRF-skydd</p>
               <p>
                 Inbyggt skydd mot Cross-Site Request Forgery med double-submit
@@ -355,7 +355,7 @@ export default function BetterAuthSessions() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">
                 Session Management
               </p>
@@ -365,7 +365,7 @@ export default function BetterAuthSessions() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Rate Limiting</p>
               <p>
                 Skyddar mot brute force-attacker genom att begränsa antal
@@ -374,7 +374,7 @@ export default function BetterAuthSessions() {
             </div>
           </div>
 
-          <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-yellow-400">
+          <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-yellow-400">
             <p className="text-sm">
               <strong>🛡️ Säkerhet först:</strong> Better Auth följer OWASP:s
               best practices och implementerar industristandarder för

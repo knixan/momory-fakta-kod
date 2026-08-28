@@ -99,7 +99,7 @@ export default function CsCollectionsGame() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-emerald-400 mb-2">🧠 Matcha C# collections!</div>
           <div className="text-sm text-gray-300">Klicka på en collection-typ och dess förklaring. Matchade par försvinner.</div>
@@ -128,7 +128,7 @@ export default function CsCollectionsGame() {
       </div>
 
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -147,19 +147,19 @@ export default function CsCollectionsGame() {
           <h3 className="text-xl font-bold">Snabbfakta om C# Collections</h3>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-yellow-300">Vanligast</span>
             <p>List&lt;T&gt;, Dictionary&lt;K,V&gt;, Array</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-red-300">Unikhet</span>
             <p>HashSet&lt;T&gt;, SortedSet&lt;T&gt;</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-green-300">FIFO/LIFO</span>
             <p>Queue&lt;T&gt; (FIFO), Stack&lt;T&gt; (LIFO)</p>
           </div>
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <span className="font-semibold text-orange-300">Trådsäkert</span>
             <p>ConcurrentDictionary, ConcurrentQueue</p>
           </div>
@@ -171,22 +171,22 @@ export default function CsCollectionsGame() {
             <h4 className="text-lg font-bold text-cyan-300">Välj rätt collection</h4>
           </div>
           <div className="grid sm:grid-cols-3 gap-3 text-sm">
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Behöver du söka på nyckel?</p>
               <p>→ Dictionary&lt;K,V&gt;</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Behöver du unika värden?</p>
               <p>→ HashSet&lt;T&gt;</p>
             </div>
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Behöver du ordnad lista?</p>
               <p>→ List&lt;T&gt; eller Array</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-emerald-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-emerald-400">
           <p className="text-sm italic">&ldquo;Dictionary-uppslagning är O(1) medan List-sökning är O(n) – rätt val kan göra enorm skillnad i prestanda.&rdquo;</p>
         </div>
       </div>

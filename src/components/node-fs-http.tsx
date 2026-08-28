@@ -150,7 +150,7 @@ export default function NodeFsHttpGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-emerald-300">
           📁 Matcha fs &amp; http
         </div>
@@ -206,7 +206,7 @@ export default function NodeFsHttpGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -235,7 +235,7 @@ export default function NodeFsHttpGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📖</span>
               <span className="font-semibold text-emerald-300">
@@ -245,7 +245,7 @@ export default function NodeFsHttpGame() {
             <p>Läs/skriv filer, både sync och async</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌐</span>
               <span className="font-semibold text-teal-300">
@@ -255,7 +255,7 @@ export default function NodeFsHttpGame() {
             <p>Inbyggd server utan externa beroenden</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧭</span>
               <span className="font-semibold text-cyan-300">
@@ -265,7 +265,7 @@ export default function NodeFsHttpGame() {
             <p>join, resolve, extname för sökvägar</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌊</span>
               <span className="font-semibold text-green-300">
@@ -275,7 +275,7 @@ export default function NodeFsHttpGame() {
             <p>Läs/skriv stora filer utan att fylla minnet</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📡</span>
               <span className="font-semibold text-lime-300">
@@ -285,7 +285,7 @@ export default function NodeFsHttpGame() {
             <p>IncomingMessage och ServerResponse-objekt</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🚦</span>
               <span className="font-semibold text-sky-300">
@@ -296,7 +296,7 @@ export default function NodeFsHttpGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-emerald-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-emerald-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-emerald-300">Tips:</span>
@@ -319,7 +319,7 @@ export default function NodeFsHttpGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 📖 Läsa filer
               </h3>
@@ -338,7 +338,7 @@ const parsed = JSON.parse(data)`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 ✏️ Skriva filer
               </h3>
@@ -357,7 +357,7 @@ await appendFile("log.txt", "Ny rad\\n")`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🧭 path-modulen
               </h3>
@@ -378,7 +378,7 @@ path.extname("photo.jpg") // ".jpg"`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🌐 En enkel HTTP-server
               </h3>
@@ -401,7 +401,7 @@ server.listen(3000)`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 📡 Läsa request-body
               </h3>
@@ -421,7 +421,7 @@ req.on("end", () => {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 🌊 Streams för stora filer
               </h3>

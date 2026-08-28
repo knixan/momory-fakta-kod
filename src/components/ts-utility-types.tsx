@@ -150,7 +150,7 @@ export default function TsUtilityTypesGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-teal-300">
           🧰 Matcha TypeScript Utility Types
         </div>
@@ -206,7 +206,7 @@ export default function TsUtilityTypesGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -235,7 +235,7 @@ export default function TsUtilityTypesGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧩</span>
               <span className="font-semibold text-teal-300">Partial</span>
@@ -243,7 +243,7 @@ export default function TsUtilityTypesGame() {
             <p>Alla fält blir valfria - bra för PATCH/uppdateringar</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✅</span>
               <span className="font-semibold text-cyan-300">Required</span>
@@ -251,7 +251,7 @@ export default function TsUtilityTypesGame() {
             <p>Motsatsen till Partial - alla fält blir obligatoriska</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎯</span>
               <span className="font-semibold text-emerald-300">Pick</span>
@@ -259,7 +259,7 @@ export default function TsUtilityTypesGame() {
             <p>Plocka ut ett fåtal fält från en större typ</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✂️</span>
               <span className="font-semibold text-sky-300">Omit</span>
@@ -267,7 +267,7 @@ export default function TsUtilityTypesGame() {
             <p>Ta bort ett fåtal fält från en större typ</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📋</span>
               <span className="font-semibold text-lime-300">Record</span>
@@ -275,7 +275,7 @@ export default function TsUtilityTypesGame() {
             <p>Bygg upp objekt-typer med kända nycklar</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔒</span>
               <span className="font-semibold text-green-300">
@@ -286,7 +286,7 @@ export default function TsUtilityTypesGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-teal-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-teal-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-teal-300">Tips:</span>
@@ -310,7 +310,7 @@ export default function TsUtilityTypesGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 🧩 Partial &amp; Required
               </h3>
@@ -334,7 +334,7 @@ function updateUser(id: string, data: UserUpdate) { ... }`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🎯 Pick - plocka ut fält
               </h3>
@@ -357,7 +357,7 @@ type PublicUser = Pick<User, "id" | "name" | "email">`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 ✂️ Omit - exkludera fält
               </h3>
@@ -376,7 +376,7 @@ type PublicUser = Pick<User, "id" | "name" | "email">`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 📋 Record - bygga objekt-typer
               </h3>
@@ -398,7 +398,7 @@ const permissions: Record<Role, string[]> = {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🔒 Readonly
               </h3>
@@ -418,7 +418,7 @@ config.apiUrl = "annan-url" // Fel vid kompilering`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <h3 className="text-lg font-bold text-blue-400 mb-3">
                 🔁 ReturnType &amp; Parameters
               </h3>

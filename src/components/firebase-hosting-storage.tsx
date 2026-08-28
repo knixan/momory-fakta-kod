@@ -133,7 +133,7 @@ export default function FirebaseHostingStorageGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-red-300">
           🚀 Matcha Storage &amp; Hosting
         </div>
@@ -191,7 +191,7 @@ export default function FirebaseHostingStorageGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -222,7 +222,7 @@ export default function FirebaseHostingStorageGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📤</span>
               <span className="font-semibold text-red-300">Upload</span>
@@ -230,7 +230,7 @@ export default function FirebaseHostingStorageGame() {
             <p>uploadBytes/uploadBytesResumable för filer</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔗</span>
               <span className="font-semibold text-orange-300">
@@ -240,7 +240,7 @@ export default function FirebaseHostingStorageGame() {
             <p>Publik/signerad länk till filen</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📁</span>
               <span className="font-semibold text-amber-300">
@@ -250,7 +250,7 @@ export default function FirebaseHostingStorageGame() {
             <p>Sökväg-baserad referens till en fil/mapp</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌍</span>
               <span className="font-semibold text-rose-300">
@@ -260,7 +260,7 @@ export default function FirebaseHostingStorageGame() {
             <p>Global CDN för statiska/SSR-appar</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧾</span>
               <span className="font-semibold text-pink-300">
@@ -270,7 +270,7 @@ export default function FirebaseHostingStorageGame() {
             <p>Konfig för hosting, rewrites och headers</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🛡️</span>
               <span className="font-semibold text-yellow-300">
@@ -281,7 +281,7 @@ export default function FirebaseHostingStorageGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-red-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-red-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-red-300">Tips:</span>
@@ -304,7 +304,7 @@ export default function FirebaseHostingStorageGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-red-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-red-500">
               <h3 className="text-lg font-bold text-red-400 mb-3">
                 📤 Ladda upp en fil
               </h3>
@@ -326,7 +326,7 @@ await uploadBytes(fileRef, file)`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 🔗 Hämta nedladdnings-URL
               </h3>
@@ -345,7 +345,7 @@ const url = await getDownloadURL(fileRef)
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
               <h3 className="text-lg font-bold text-amber-400 mb-3">
                 📊 Uppladdning med progress
               </h3>
@@ -371,7 +371,7 @@ task.on("state_changed", (snap) => {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-rose-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-rose-500">
               <h3 className="text-lg font-bold text-rose-400 mb-3">
                 🌍 Deploy till Hosting
               </h3>
@@ -391,7 +391,7 @@ firebase deploy --only hosting:app`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 🧾 firebase.json
               </h3>
@@ -414,7 +414,7 @@ firebase deploy --only hosting:app`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🛡️ Storage Security Rules
               </h3>

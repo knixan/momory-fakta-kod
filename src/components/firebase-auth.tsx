@@ -150,7 +150,7 @@ export default function FirebaseAuthGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-orange-300">
           🔥 Matcha Firebase Authentication
         </div>
@@ -206,7 +206,7 @@ export default function FirebaseAuthGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -235,7 +235,7 @@ export default function FirebaseAuthGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📧</span>
               <span className="font-semibold text-orange-300">
@@ -245,7 +245,7 @@ export default function FirebaseAuthGame() {
             <p>Klassisk inloggning med createUser/signIn-metoder</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🌐</span>
               <span className="font-semibold text-amber-300">
@@ -255,7 +255,7 @@ export default function FirebaseAuthGame() {
             <p>Google, GitHub, Facebook, Apple m.fl.</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎟️</span>
               <span className="font-semibold text-yellow-300">
@@ -265,7 +265,7 @@ export default function FirebaseAuthGame() {
             <p>JWT som verifierar användarens identitet</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">👂</span>
               <span className="font-semibold text-red-300">
@@ -275,7 +275,7 @@ export default function FirebaseAuthGame() {
             <p>onAuthStateChanged håller UI i synk med inloggning</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🛡️</span>
               <span className="font-semibold text-pink-300">
@@ -285,7 +285,7 @@ export default function FirebaseAuthGame() {
             <p>request.auth styr åtkomst i Firestore/Storage</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🏷️</span>
               <span className="font-semibold text-rose-300">
@@ -296,7 +296,7 @@ export default function FirebaseAuthGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-orange-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-orange-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-orange-300">Tips:</span>
@@ -319,7 +319,7 @@ export default function FirebaseAuthGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 📧 Email &amp; Lösenord
               </h3>
@@ -349,7 +349,7 @@ await signInWithEmailAndPassword(
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
               <h3 className="text-lg font-bold text-amber-400 mb-3">
                 🌐 OAuth med Popup
               </h3>
@@ -374,7 +374,7 @@ const user = result.user`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 👂 Lyssna på Auth State
               </h3>
@@ -400,7 +400,7 @@ useEffect(() => {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-red-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-red-500">
               <h3 className="text-lg font-bold text-red-400 mb-3">
                 🚪 Logga ut
               </h3>
@@ -416,7 +416,7 @@ await signOut(auth)`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 🛡️ Security Rules
               </h3>
@@ -441,7 +441,7 @@ service cloud.firestore {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-rose-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-rose-500">
               <h3 className="text-lg font-bold text-rose-400 mb-3">
                 🏷️ Custom Claims (Admin SDK)
               </h3>

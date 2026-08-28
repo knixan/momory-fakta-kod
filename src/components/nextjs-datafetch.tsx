@@ -133,7 +133,7 @@ export default function NextjsDataFetchGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-emerald-300">
           🔁 Matcha Data Fetching
         </div>
@@ -189,7 +189,7 @@ export default function NextjsDataFetchGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -218,7 +218,7 @@ export default function NextjsDataFetchGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-emerald-300">SSR</span>
@@ -226,7 +226,7 @@ export default function NextjsDataFetchGame() {
             <p>Server-Side Rendering</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🏗️</span>
               <span className="font-semibold text-cyan-300">SSG</span>
@@ -234,7 +234,7 @@ export default function NextjsDataFetchGame() {
             <p>Static Site Generation</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔄</span>
               <span className="font-semibold text-yellow-300">ISR</span>
@@ -242,7 +242,7 @@ export default function NextjsDataFetchGame() {
             <p>Incremental Static Regeneration</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">💻</span>
               <span className="font-semibold text-pink-300">CSR</span>
@@ -250,7 +250,7 @@ export default function NextjsDataFetchGame() {
             <p>Client-Side Rendering</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎯</span>
               <span className="font-semibold text-orange-300">Fetch</span>
@@ -258,7 +258,7 @@ export default function NextjsDataFetchGame() {
             <p>Hämta data i komponenter</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📦</span>
               <span className="font-semibold text-purple-300">Caching</span>
@@ -267,7 +267,7 @@ export default function NextjsDataFetchGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-emerald-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-emerald-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-emerald-300">Tips:</span>
@@ -290,7 +290,7 @@ export default function NextjsDataFetchGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 ⚡ Server-Side Rendering (SSR)
               </h3>
@@ -319,7 +319,7 @@ export default async function Page() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🏗️ Static Site Generation (SSG)
               </h3>
@@ -344,7 +344,7 @@ export default async function Page() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🔄 Incremental Static Regeneration (ISR)
               </h3>
@@ -373,7 +373,7 @@ export default async function Page() {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="text-lg font-bold text-pink-400 mb-3">
                 💻 Client-Side Rendering (CSR)
               </h3>
@@ -408,7 +408,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 🎯 Fetch i Server Components
               </h3>
@@ -434,7 +434,7 @@ fetch('...', { next: { revalidate: 60 } })`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 📊 Välja rätt strategi
               </h3>

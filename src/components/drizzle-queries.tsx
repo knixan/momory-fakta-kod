@@ -133,7 +133,7 @@ export default function DrizzleQueriesGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-lime-300">
           🔎 Matcha Drizzle Queries
         </div>
@@ -191,7 +191,7 @@ export default function DrizzleQueriesGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -220,7 +220,7 @@ export default function DrizzleQueriesGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📥</span>
               <span className="font-semibold text-lime-300">Select</span>
@@ -228,7 +228,7 @@ export default function DrizzleQueriesGame() {
             <p>SQL-liknande query builder</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">➕</span>
               <span className="font-semibold text-emerald-300">Insert</span>
@@ -236,7 +236,7 @@ export default function DrizzleQueriesGame() {
             <p>.values() + .returning() för Postgres</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">✏️</span>
               <span className="font-semibold text-teal-300">Update</span>
@@ -244,7 +244,7 @@ export default function DrizzleQueriesGame() {
             <p>.set({}).where(eq(col, val))</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🗑️</span>
               <span className="font-semibold text-cyan-300">Delete</span>
@@ -252,7 +252,7 @@ export default function DrizzleQueriesGame() {
             <p>db.delete(table).where(...)</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧭</span>
               <span className="font-semibold text-sky-300">
@@ -262,7 +262,7 @@ export default function DrizzleQueriesGame() {
             <p>db.query.table.findMany/findFirst</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧮</span>
               <span className="font-semibold text-yellow-300">
@@ -273,7 +273,7 @@ export default function DrizzleQueriesGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-lime-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-lime-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-lime-300">Tips:</span>
@@ -296,7 +296,7 @@ export default function DrizzleQueriesGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 📥 Select med filter
               </h3>
@@ -319,7 +319,7 @@ const activeUsers = await db
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 ➕ Insert &amp; Update
               </h3>
@@ -342,7 +342,7 @@ await db.update(users)
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 🗑️ Delete
               </h3>
@@ -359,7 +359,7 @@ await db.update(users)
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🧭 Relational Query API
               </h3>
@@ -380,7 +380,7 @@ await db.update(users)
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 🔗 Manuell Join
               </h3>
@@ -399,7 +399,7 @@ await db.update(users)
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🧮 Vanliga operatorer
               </h3>

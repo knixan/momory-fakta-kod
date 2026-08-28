@@ -254,7 +254,7 @@ export default function BetterAuthGrundkoncept() {
         </div>
 
         {/* Spelstatistik */}
-        <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+        <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
           <div className="flex justify-between items-center flex-wrap gap-4">
             <div className="flex gap-6">
               <div className="text-center">
@@ -326,7 +326,7 @@ export default function BetterAuthGrundkoncept() {
 
         {/* Vinst-meddelande */}
         {gameCompleted && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
               <div className="text-6xl mb-4">🎉</div>
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -356,7 +356,7 @@ export default function BetterAuthGrundkoncept() {
           </div>
 
           <div className="space-y-4 text-sm">
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">
                 Framework-agnostiskt
               </p>
@@ -366,7 +366,7 @@ export default function BetterAuthGrundkoncept() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">
                 Enkel konfiguration
               </p>
@@ -376,7 +376,7 @@ export default function BetterAuthGrundkoncept() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Plugin-ekosystem</p>
               <p>
                 Utöka funktionalitet med plugins som 2FA, passkey,
@@ -384,7 +384,7 @@ export default function BetterAuthGrundkoncept() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Säkerhet först</p>
               <p>Built-in säkerhet med kryptering, hashing, och CSRF-skydd</p>
             </div>

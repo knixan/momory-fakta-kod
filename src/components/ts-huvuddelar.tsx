@@ -236,7 +236,7 @@ export default function HuvuddelarGame() {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik och instruktioner */}
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-purple-400 mb-2">
             🧠 Matcha TypeScript-begrepp med beskrivningar!
@@ -303,12 +303,7 @@ export default function HuvuddelarGame() {
                   ? "ring-4 ring-yellow-400 border-yellow-300 shadow-yellow-200"
                   : "border-gray-300"
               }
-              ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
-              ${
-                card.type === "concept"
-                  ? "bg-gradient-to-br from-blue-900 to-purple-900"
-                  : "bg-gradient-to-br from-green-900 to-teal-900"
-              }
+              ${card.isMatched ? "ring-4 ring-green-400" : ""}
               transition-all duration-300
             `}
             >
@@ -335,7 +330,7 @@ export default function HuvuddelarGame() {
 
       {/* Vinst-meddelande */}
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -367,7 +362,7 @@ export default function HuvuddelarGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧠</span>
               <span className="font-semibold text-blue-300">Begreppskort</span>
@@ -375,7 +370,7 @@ export default function HuvuddelarGame() {
             <p>Blå bakgrund - visar namnet på TypeScript-konceptet</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📝</span>
               <span className="font-semibold text-green-300">
@@ -386,7 +381,7 @@ export default function HuvuddelarGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-yellow-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-yellow-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-yellow-300">Tips:</span>
@@ -409,7 +404,7 @@ export default function HuvuddelarGame() {
 
         <div className="space-y-6">
           {/* Syntax och struktur */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧠</span>
               <h3 className="text-lg font-bold text-blue-400">
@@ -439,7 +434,7 @@ export default function HuvuddelarGame() {
                 {"//"}, /* */
               </p>
             </div>
-            <div className="mt-3 p-2 bg-blue-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-blue-900/30 rounded text-xs">
               <p className="text-blue-200">
                 ➡️ Syfte: definiera programflöde och logik.
               </p>
@@ -447,7 +442,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Datatyper */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧩</span>
               <h3 className="text-lg font-bold text-green-400">2. Datatyper</h3>
@@ -471,7 +466,7 @@ export default function HuvuddelarGame() {
                 <p>union, intersection, literal types, enum, generic</p>
               </div>
             </div>
-            <div className="mt-3 p-2 bg-green-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-green-900/30 rounded text-xs">
               <p className="text-green-200">
                 ➡️ Syfte: skapa struktur, minska fel och ge tydlighet.
               </p>
@@ -479,7 +474,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Operatorer och tecken */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-red-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-red-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🔣</span>
               <h3 className="text-lg font-bold text-red-400">
@@ -513,7 +508,7 @@ export default function HuvuddelarGame() {
                 <p>? :, ...</p>
               </div>
             </div>
-            <div className="mt-3 p-2 bg-red-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-red-900/30 rounded text-xs">
               <p className="text-red-200">
                 ➡️ Syfte: utföra operationer och styra logik.
               </p>
@@ -521,7 +516,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Variabler och konstanter */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧮</span>
               <h3 className="text-lg font-bold text-yellow-400">
@@ -543,7 +538,7 @@ export default function HuvuddelarGame() {
                 (undviks oftast i TS)
               </p>
             </div>
-            <div className="mt-3 p-2 bg-yellow-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-yellow-900/30 rounded text-xs">
               <p className="text-yellow-200">
                 ➡️ Syfte: hålla data i minnet för senare användning.
               </p>
@@ -551,7 +546,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Funktioner */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">⚙️</span>
               <h3 className="text-lg font-bold text-purple-400">
@@ -566,7 +561,7 @@ export default function HuvuddelarGame() {
   return \`Hej, \${name}!\`;
 }`}</pre>
             </div>
-            <div className="mt-3 p-2 bg-purple-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-purple-900/30 rounded text-xs">
               <p className="text-purple-200">
                 ➡️ Syfte: återanvänd logik, dela upp programmet i mindre delar.
               </p>
@@ -574,7 +569,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Objekt och klasser */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧱</span>
               <h3 className="text-lg font-bold text-orange-400">
@@ -605,7 +600,7 @@ export default function HuvuddelarGame() {
                 </div>
               </div>
             </div>
-            <div className="mt-3 p-2 bg-orange-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-orange-900/30 rounded text-xs">
               <p className="text-orange-200">
                 ➡️ Syfte: strukturera och modellera verkliga saker.
               </p>
@@ -613,7 +608,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Interface & Type */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧩</span>
               <h3 className="text-lg font-bold text-cyan-400">
@@ -629,7 +624,7 @@ export default function HuvuddelarGame() {
   name: string;
 }`}</pre>
             </div>
-            <div className="mt-3 p-2 bg-cyan-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-cyan-900/30 rounded text-xs">
               <p className="text-cyan-200">
                 ➡️ Syfte: skapa tydliga &quot;mallar&quot; för data.
               </p>
@@ -637,7 +632,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Generics */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-pink-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-pink-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧠</span>
               <h3 className="text-lg font-bold text-pink-400">8. Generics</h3>
@@ -651,7 +646,7 @@ export default function HuvuddelarGame() {
   return value;
 }`}</pre>
             </div>
-            <div className="mt-3 p-2 bg-pink-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-pink-900/30 rounded text-xs">
               <p className="text-pink-200">
                 ➡️ Syfte: återanvändbar och flexibel kod.
               </p>
@@ -659,7 +654,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Moduler och import/export */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-indigo-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-indigo-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">⚡</span>
               <h3 className="text-lg font-bold text-indigo-400">
@@ -681,7 +676,7 @@ export default function HuvuddelarGame() {
                 </div>
               </div>
             </div>
-            <div className="mt-3 p-2 bg-indigo-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-indigo-900/30 rounded text-xs">
               <p className="text-indigo-200">
                 ➡️ Syfte: strukturera större projekt.
               </p>
@@ -689,7 +684,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Felhantering */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-red-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-red-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧰</span>
               <h3 className="text-lg font-bold text-red-400">
@@ -704,7 +699,7 @@ export default function HuvuddelarGame() {
   console.log(e.message);
 }`}</pre>
             </div>
-            <div className="mt-3 p-2 bg-red-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-red-900/30 rounded text-xs">
               <p className="text-red-200">
                 ➡️ Syfte: förhindra att program kraschar vid fel.
               </p>
@@ -712,7 +707,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Kontrollstrukturer */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🔄</span>
               <h3 className="text-lg font-bold text-emerald-400">
@@ -744,7 +739,7 @@ export default function HuvuddelarGame() {
                 Kontrollflöde
               </p>
             </div>
-            <div className="mt-3 p-2 bg-emerald-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-emerald-900/30 rounded text-xs">
               <p className="text-emerald-200">
                 ➡️ Syfte: styra ordningen som koden körs i.
               </p>
@@ -752,7 +747,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Kommentarer och dokumentation */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-gray-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-gray-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">💬</span>
               <h3 className="text-lg font-bold text-gray-400">
@@ -773,7 +768,7 @@ export default function HuvuddelarGame() {
  */`}</pre>
               </div>
             </div>
-            <div className="mt-3 p-2 bg-gray-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-gray-900/30 rounded text-xs">
               <p className="text-gray-200">
                 ➡️ Syfte: gör koden lättare att förstå och underhålla.
               </p>
@@ -781,7 +776,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Typdeklarationer och bibliotek */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧩</span>
               <h3 className="text-lg font-bold text-teal-400">
@@ -795,7 +790,7 @@ export default function HuvuddelarGame() {
             <div className="bg-gray-800 p-3 rounded text-sm font-mono text-yellow-300 mb-3">
               <pre>npm install --save-dev @types/express</pre>
             </div>
-            <div className="mt-3 p-2 bg-teal-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-teal-900/30 rounded text-xs">
               <p className="text-teal-200">
                 ➡️ Syfte: lägga till typstöd för tredjepartspaket.
               </p>
@@ -803,7 +798,7 @@ export default function HuvuddelarGame() {
           </div>
 
           {/* Konfigurationsfiler */}
-          <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+          <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🧾</span>
               <h3 className="text-lg font-bold text-amber-400">
@@ -823,7 +818,7 @@ export default function HuvuddelarGame() {
   }
 }`}</pre>
             </div>
-            <div className="mt-3 p-2 bg-amber-900 bg-opacity-30 rounded text-xs">
+            <div className="mt-3 p-2 bg-amber-900/30 rounded text-xs">
               <p className="text-amber-200">
                 ➡️ Syfte: kontrollera hur koden översätts till JavaScript.
               </p>

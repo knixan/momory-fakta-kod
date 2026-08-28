@@ -215,7 +215,7 @@ export default function PrismaSchemaGame() {
   return (
     <div className="max-w-6xl mx-auto">
       {/* Spelstatistik */}
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-center mb-4">
           <div className="text-xl font-bold text-cyan-400 mb-2">
             🗄️ Matcha Prisma 7 Schema-koncept!
@@ -279,7 +279,7 @@ export default function PrismaSchemaGame() {
                   ? "ring-4 ring-cyan-400 border-cyan-300 shadow-cyan-200"
                   : "border-gray-300"
               }
-              ${card.isMatched ? "ring-4 ring-green-400 bg-opacity-90" : ""}
+              ${card.isMatched ? "ring-4 ring-green-400" : ""}
               transition-all duration-300
             `}
             >
@@ -299,7 +299,7 @@ export default function PrismaSchemaGame() {
 
       {/* Vinst-meddelande */}
       {gameCompleted && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Grattis!</h2>
@@ -332,7 +332,7 @@ export default function PrismaSchemaGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🏗️</span>
               <span className="font-semibold text-cyan-300">Model</span>
@@ -340,7 +340,7 @@ export default function PrismaSchemaGame() {
             <p>Definierar tabellstruktur</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-yellow-300">prisma-client</span>
@@ -348,7 +348,7 @@ export default function PrismaSchemaGame() {
             <p>Ny Rust-fri generator i v7</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📋</span>
               <span className="font-semibold text-green-300">prisma.config.ts</span>
@@ -356,7 +356,7 @@ export default function PrismaSchemaGame() {
             <p>Ny konfigurationsfil för CLI</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔌</span>
               <span className="font-semibold text-purple-300">Driver Adapter</span>
@@ -364,7 +364,7 @@ export default function PrismaSchemaGame() {
             <p>Ersätter Rust-engine i v7</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔗</span>
               <span className="font-semibold text-pink-300">@relation</span>
@@ -372,7 +372,7 @@ export default function PrismaSchemaGame() {
             <p>Kopplar ihop modeller</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📂</span>
               <span className="font-semibold text-orange-300">output</span>
@@ -381,7 +381,7 @@ export default function PrismaSchemaGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-cyan-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-cyan-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-cyan-300">Tips:</span>
@@ -404,7 +404,7 @@ export default function PrismaSchemaGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 ⚡ Ny generator i Prisma 7
               </h3>
@@ -426,7 +426,7 @@ export default function PrismaSchemaGame() {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 📋 prisma.config.ts
               </h3>
@@ -449,7 +449,7 @@ export default defineConfig({
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-green-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-green-500">
               <h3 className="text-lg font-bold text-green-400 mb-3">
                 🔌 Driver Adapter-setup
               </h3>
@@ -464,7 +464,7 @@ const prisma = new PrismaClient({ adapter })`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 💡 Viktigt i Prisma 7
               </h3>

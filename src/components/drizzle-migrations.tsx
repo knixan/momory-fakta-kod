@@ -133,7 +133,7 @@ export default function DrizzleMigrationsGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-teal-300">
           🛠️ Matcha Drizzle Migrations
         </div>
@@ -189,7 +189,7 @@ export default function DrizzleMigrationsGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -220,7 +220,7 @@ export default function DrizzleMigrationsGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📄</span>
               <span className="font-semibold text-teal-300">Generate</span>
@@ -228,7 +228,7 @@ export default function DrizzleMigrationsGame() {
             <p>Diffar schema mot senaste migration</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">▶️</span>
               <span className="font-semibold text-cyan-300">Migrate</span>
@@ -236,7 +236,7 @@ export default function DrizzleMigrationsGame() {
             <p>Kör SQL-filerna i ordning mot DB</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-emerald-300">Push</span>
@@ -244,7 +244,7 @@ export default function DrizzleMigrationsGame() {
             <p>Synkar schema direkt utan migrationsfiler (dev)</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🖥️</span>
               <span className="font-semibold text-lime-300">Studio</span>
@@ -252,7 +252,7 @@ export default function DrizzleMigrationsGame() {
             <p>Webb-GUI för att bläddra i data</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚙️</span>
               <span className="font-semibold text-sky-300">
@@ -262,7 +262,7 @@ export default function DrizzleMigrationsGame() {
             <p>Konfig för schema-path, dialect och DB-URL</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📁</span>
               <span className="font-semibold text-yellow-300">
@@ -273,7 +273,7 @@ export default function DrizzleMigrationsGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-teal-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-teal-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-teal-300">Tips:</span>
@@ -296,7 +296,7 @@ export default function DrizzleMigrationsGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-teal-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-teal-500">
               <h3 className="text-lg font-bold text-teal-400 mb-3">
                 ⚙️ drizzle.config.ts
               </h3>
@@ -321,7 +321,7 @@ export default defineConfig({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 📄 Generera migration
               </h3>
@@ -339,7 +339,7 @@ export default defineConfig({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 ▶️ Kör migrationer
               </h3>
@@ -359,7 +359,7 @@ await migrate(db, { migrationsFolder: "./drizzle" })`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 ⚡ Push (snabb dev-loop)
               </h3>
@@ -377,7 +377,7 @@ await migrate(db, { migrationsFolder: "./drizzle" })`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 🖥️ Drizzle Studio
               </h3>
@@ -394,7 +394,7 @@ await migrate(db, { migrationsFolder: "./drizzle" })`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 📊 Generate vs Push
               </h3>

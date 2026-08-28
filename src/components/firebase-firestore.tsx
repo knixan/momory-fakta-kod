@@ -133,7 +133,7 @@ export default function FirebaseFirestoreGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-amber-300">
           🗃️ Matcha Firestore
         </div>
@@ -191,7 +191,7 @@ export default function FirebaseFirestoreGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -220,7 +220,7 @@ export default function FirebaseFirestoreGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📂</span>
               <span className="font-semibold text-amber-300">
@@ -230,7 +230,7 @@ export default function FirebaseFirestoreGame() {
             <p>Grupp av dokument, t.ex. &quot;users&quot;</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📄</span>
               <span className="font-semibold text-yellow-300">
@@ -240,7 +240,7 @@ export default function FirebaseFirestoreGame() {
             <p>JSON-liknande post med unikt ID</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔍</span>
               <span className="font-semibold text-orange-300">Query</span>
@@ -248,7 +248,7 @@ export default function FirebaseFirestoreGame() {
             <p>where(), orderBy(), limit() filtrerar data</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⚡</span>
               <span className="font-semibold text-lime-300">
@@ -258,7 +258,7 @@ export default function FirebaseFirestoreGame() {
             <p>onSnapshot pushar ändringar direkt till klienten</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">📴</span>
               <span className="font-semibold text-emerald-300">
@@ -268,7 +268,7 @@ export default function FirebaseFirestoreGame() {
             <p>Inbyggd cache och sync när nätet återkommer</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧩</span>
               <span className="font-semibold text-cyan-300">
@@ -279,7 +279,7 @@ export default function FirebaseFirestoreGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-amber-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-amber-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-amber-300">Tips:</span>
@@ -302,7 +302,7 @@ export default function FirebaseFirestoreGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-amber-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-amber-500">
               <h3 className="text-lg font-bold text-amber-400 mb-3">
                 📂 Läsa en collection
               </h3>
@@ -327,7 +327,7 @@ const users = snap.docs.map(d => ({
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-yellow-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-yellow-500">
               <h3 className="text-lg font-bold text-yellow-400 mb-3">
                 🔍 Filtrera med query
               </h3>
@@ -352,7 +352,7 @@ const q = query(
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-orange-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-orange-500">
               <h3 className="text-lg font-bold text-orange-400 mb-3">
                 ⚡ Realtidslyssnare
               </h3>
@@ -377,7 +377,7 @@ useEffect(() => {
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-lime-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-lime-500">
               <h3 className="text-lg font-bold text-lime-400 mb-3">
                 ✏️ Skriva data
               </h3>
@@ -403,7 +403,7 @@ await updateDoc(doc(db, "posts", id), {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-emerald-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-emerald-500">
               <h3 className="text-lg font-bold text-emerald-400 mb-3">
                 📴 Offline-persistens
               </h3>
@@ -426,7 +426,7 @@ const db = initializeFirestore(app, {
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🧩 Subcollections
               </h3>

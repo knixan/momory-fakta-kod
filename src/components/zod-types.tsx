@@ -150,7 +150,7 @@ export default function ZodTypesGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-indigo-300">
           🧬 Matcha Zod Types &amp; Transform
         </div>
@@ -208,7 +208,7 @@ export default function ZodTypesGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -239,7 +239,7 @@ export default function ZodTypesGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧬</span>
               <span className="font-semibold text-indigo-300">
@@ -249,7 +249,7 @@ export default function ZodTypesGame() {
             <p>Härleder TypeScript-typ från schemat</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">❓</span>
               <span className="font-semibold text-violet-300">
@@ -259,7 +259,7 @@ export default function ZodTypesGame() {
             <p>Fältet kan saknas (undefined)</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🈳</span>
               <span className="font-semibold text-purple-300">
@@ -269,7 +269,7 @@ export default function ZodTypesGame() {
             <p>Fältet kan vara null</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔄</span>
               <span className="font-semibold text-blue-300">
@@ -279,7 +279,7 @@ export default function ZodTypesGame() {
             <p>Ändrar värdet efter validering</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔀</span>
               <span className="font-semibold text-sky-300">Union</span>
@@ -287,7 +287,7 @@ export default function ZodTypesGame() {
             <p>Matchar ett av flera scheman</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎁</span>
               <span className="font-semibold text-cyan-300">default</span>
@@ -296,7 +296,7 @@ export default function ZodTypesGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-indigo-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-indigo-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-indigo-300">Tips:</span>
@@ -319,7 +319,7 @@ export default function ZodTypesGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-indigo-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-indigo-500">
               <h3 className="text-lg font-bold text-indigo-400 mb-3">
                 🧬 Härled typer med z.infer
               </h3>
@@ -341,7 +341,7 @@ type User = z.infer<typeof userSchema>
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-violet-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-violet-500">
               <h3 className="text-lg font-bold text-violet-400 mb-3">
                 ❓ optional, nullable, nullish
               </h3>
@@ -359,7 +359,7 @@ z.string().nullish()   // string | null | undefined`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 🎁 Default-värden
               </h3>
@@ -381,7 +381,7 @@ schema.parse({}) // { role: "user" }`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <h3 className="text-lg font-bold text-blue-400 mb-3">
                 🔄 Transform - omvandla värden
               </h3>
@@ -399,7 +399,7 @@ const trimmedSchema = z.string().transform((s) => s.trim())`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 🔀 Union - flera möjliga typer
               </h3>
@@ -420,7 +420,7 @@ const resultSchema = z.union([
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🧷 Extend &amp; partial
               </h3>

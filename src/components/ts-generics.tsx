@@ -150,7 +150,7 @@ export default function TsGenericsGame() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+      <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
         <div className="text-xl font-bold text-indigo-300">
           🧬 Matcha TypeScript Generics
         </div>
@@ -208,7 +208,7 @@ export default function TsGenericsGame() {
       </div>
 
       {completed && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40">
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-40">
           <div className="bg-white rounded-lg p-6 text-center max-w-md mx-4">
             <div className="text-4xl mb-2">🎉</div>
             <h3 className="text-lg font-bold mb-2">Bra jobbat!</h3>
@@ -237,7 +237,7 @@ export default function TsGenericsGame() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔤</span>
               <span className="font-semibold text-indigo-300">
@@ -247,7 +247,7 @@ export default function TsGenericsGame() {
             <p>T, K, V - konventionsnamn för generiska typer</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🚧</span>
               <span className="font-semibold text-violet-300">
@@ -257,7 +257,7 @@ export default function TsGenericsGame() {
             <p>extends begränsar vilka typer T får vara</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🎁</span>
               <span className="font-semibold text-purple-300">
@@ -267,7 +267,7 @@ export default function TsGenericsGame() {
             <p>&lt;T = string&gt; ger ett standardvärde</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🧩</span>
               <span className="font-semibold text-blue-300">
@@ -277,7 +277,7 @@ export default function TsGenericsGame() {
             <p>interface Box&lt;T&gt; { "{ value: T }" }</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🏗️</span>
               <span className="font-semibold text-sky-300">
@@ -287,7 +287,7 @@ export default function TsGenericsGame() {
             <p>class Stack&lt;T&gt; hanterar valfri datatyp</p>
           </div>
 
-          <div className="bg-black bg-opacity-30 rounded p-3">
+          <div className="bg-black/30 rounded p-3">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">🔢</span>
               <span className="font-semibold text-cyan-300">
@@ -298,7 +298,7 @@ export default function TsGenericsGame() {
           </div>
         </div>
 
-        <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-indigo-400">
+        <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-indigo-400">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">💡</span>
             <span className="font-semibold text-indigo-300">Tips:</span>
@@ -322,7 +322,7 @@ export default function TsGenericsGame() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-indigo-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-indigo-500">
               <h3 className="text-lg font-bold text-indigo-400 mb-3">
                 🔤 Generiska funktioner
               </h3>
@@ -343,7 +343,7 @@ identity(42)             // T härleds till number`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-violet-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-violet-500">
               <h3 className="text-lg font-bold text-violet-400 mb-3">
                 🚧 Constraints med extends
               </h3>
@@ -365,7 +365,7 @@ logLength(42)          // Fel - number har ingen length`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-purple-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="text-lg font-bold text-purple-400 mb-3">
                 🎁 Default type parameters
               </h3>
@@ -388,7 +388,7 @@ const res: ApiResponse = { data: "ok", status: 200 }`}
           </div>
 
           <div className="space-y-4">
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-blue-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-blue-500">
               <h3 className="text-lg font-bold text-blue-400 mb-3">
                 🧩 Generiska interfaces
               </h3>
@@ -409,7 +409,7 @@ const stringBox: Box<string> = { value: "hej" }`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-sky-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-sky-500">
               <h3 className="text-lg font-bold text-sky-400 mb-3">
                 🏗️ Generiska klasser
               </h3>
@@ -431,7 +431,7 @@ const numbers = new Stack<number>()`}
               </div>
             </div>
 
-            <div className="bg-black bg-opacity-40 rounded-lg p-4 border-l-4 border-cyan-500">
+            <div className="bg-black/40 rounded-lg p-4 border-l-4 border-cyan-500">
               <h3 className="text-lg font-bold text-cyan-400 mb-3">
                 🔢 Flera typparametrar
               </h3>

@@ -284,7 +284,7 @@ export default function BetterAuthAutentisering() {
         </div>
 
         {/* Spelstatistik */}
-        <div className="bg-black bg-opacity-50 rounded-lg p-6 mb-6 text-white">
+        <div className="bg-black/50 rounded-lg p-6 mb-6 text-white">
           <div className="flex justify-between items-center flex-wrap gap-4">
             <div className="flex gap-6">
               <div className="text-center">
@@ -356,7 +356,7 @@ export default function BetterAuthAutentisering() {
 
         {/* Vinst-meddelande */}
         {gameCompleted && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-8 text-center max-w-md mx-4">
               <div className="text-6xl mb-4">🎉</div>
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -386,7 +386,7 @@ export default function BetterAuthAutentisering() {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4 text-sm">
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Email & Lösenord</p>
               <p>
                 Traditionell autentisering med email och lösenord. Aktiveras med
@@ -394,7 +394,7 @@ export default function BetterAuthAutentisering() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Social Sign-On</p>
               <p>
                 OAuth-autentisering med providers som GitHub, Google, Apple,
@@ -402,7 +402,7 @@ export default function BetterAuthAutentisering() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Sessions</p>
               <p>
                 Hantera användarens inloggningsstatus både på klient- och
@@ -410,7 +410,7 @@ export default function BetterAuthAutentisering() {
               </p>
             </div>
 
-            <div className="bg-black bg-opacity-30 rounded p-3">
+            <div className="bg-black/30 rounded p-3">
               <p className="font-semibold text-yellow-300">Plugin-metoder</p>
               <p>
                 Utöka med passkey, magic link, email-OTP, username och mer via
@@ -419,7 +419,7 @@ export default function BetterAuthAutentisering() {
             </div>
           </div>
 
-          <div className="mt-4 p-3 bg-black bg-opacity-20 rounded border-l-4 border-yellow-400">
+          <div className="mt-4 p-3 bg-black/20 rounded border-l-4 border-yellow-400">
             <p className="text-sm">
               <strong>💡 Tips:</strong> Använd callbacks (onSuccess, onError,
               onRequest) för att hantera UI-uppdateringar och felhantering
