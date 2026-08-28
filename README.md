@@ -2,7 +2,7 @@
 
 En samling interaktiva minnesspel som hjälper dig lära dig programmeringskoncept genom klassisk memory-kortmatchning. Varje spel kombinerar pedagogiskt innehåll (faktarutor och fördjupade kodexempel) med spelmekanik för repetition inför prov eller läxförhör.
 
-Projektet täcker just nu **12 teknikkategorier** och **43 spel**.
+Projektet täcker just nu **12 teknikkategorier** och **47 spel**.
 
 ---
 
@@ -12,7 +12,7 @@ Projektet täcker just nu **12 teknikkategorier** och **43 spel**.
 
 | Kategori | Antal spel | Router path | Innehåll |
 | :--- | :--- | :--- | :--- |
-| 📘 **TypeScript** | 4 | `/ts/*` | Syntax, datatyper, tecken/symboler, huvuddelar |
+| 📘 **TypeScript** | 8 | `/ts/*` | Syntax, datatyper, tecken/symboler, huvuddelar, generics, utility types, type narrowing, avancerade typer |
 | 🗄️ **Prisma 7** | 3 | `/Prisma/*` | Schema, relationer, queries |
 | ⚛️ **Next.js** | 3 | `/nextjs/*` | Routing, data fetching, lifecycle |
 | ⚛️ **React** | 4 | `/react/*` | Hooks, components, JSX, state management |
@@ -123,6 +123,10 @@ src/
 │   └── zod/<topic>/page.tsx
 └── components/
     ├── ts-syntax-grund.tsx
+    ├── ts-generics.tsx
+    ├── ts-utility-types.tsx
+    ├── ts-type-narrowing.tsx
+    ├── ts-avancerade-typer.tsx
     ├── prisma-schema.tsx
     ├── nextjs-routing.tsx
     ├── react-hooks.tsx
