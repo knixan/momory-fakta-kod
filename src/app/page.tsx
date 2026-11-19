@@ -58,6 +58,11 @@ const categories: Category[] = [
         description: "Utforska de viktigaste delarna av TypeScript.",
       },
       {
+        href: "/ts/inbyggda-objekt",
+        title: "Inbyggda objekt",
+        description: "Math, String, Array, Date, Set, Map, JSON och fler.",
+      },
+      {
         href: "/ts/generics",
         title: "Generics",
         description: "Generiska funktioner, klasser och constraints.",

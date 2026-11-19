@@ -2,7 +2,7 @@
 
 En samling interaktiva minnesspel som hjälper dig lära dig programmeringskoncept genom klassisk memory-kortmatchning. Varje spel kombinerar pedagogiskt innehåll (faktarutor och fördjupade kodexempel) med spelmekanik för repetition inför prov eller läxförhör.
 
-Projektet täcker just nu **12 teknikkategorier** och **47 spel**.
+Projektet täcker just nu **12 teknikkategorier** och **48 spel**.
 
 ---
 
@@ -12,7 +12,7 @@ Projektet täcker just nu **12 teknikkategorier** och **47 spel**.
 
 | Kategori | Antal spel | Router path | Innehåll |
 | :--- | :--- | :--- | :--- |
-| 📘 **TypeScript** | 8 | `/ts/*` | Syntax, datatyper, tecken/symboler, huvuddelar, generics, utility types, type narrowing, avancerade typer |
+| 📘 **TypeScript** | 9 | `/ts/*` | Syntax, datatyper, tecken/symboler, huvuddelar, inbyggda objekt, generics, utility types, type narrowing, avancerade typer |
 | 🗄️ **Prisma 7** | 3 | `/Prisma/*` | Schema, relationer, queries |
 | ⚛️ **Next.js** | 3 | `/nextjs/*` | Routing, data fetching, lifecycle |
 | ⚛️ **React** | 4 | `/react/*` | Hooks, components, JSX, state management |
