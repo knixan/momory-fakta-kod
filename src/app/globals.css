@@ -38,4 +38,18 @@ body {
 @theme {
   --color-black: #0d0f14;
   --color-white: #f2f3f5;
+
+  /*
+    Lugn palett för spelsidorna (används av komponenterna i
+    src/components/memory). Neutrala ytor och en enda dämpad accentfärg
+    istället för en ny färg per rubrik/kort.
+  */
+  --color-surface: #13161c;
+  --color-surface-raised: #191d25;
+  --color-code: #0e1015;
+  --color-line: #262b34;
+  --color-fg: #e3e5e9;
+  --color-fg-muted: #959ca7;
+  --color-accent: #8fb0e3;
+  --color-danger: #d99a9a;
 }
